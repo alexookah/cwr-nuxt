@@ -4,6 +4,7 @@ const { resolve } = createResolver(import.meta.url);
 export default defineNuxtConfig({
   // Get all the pages, components, composables and plugins from the parent theme
   extends: ['./woonuxt_base'],
+  components: [{ path: './components', pathPrefix: false }],
 
   components: [{ path: resolve('./components'), pathPrefix: false }],
 
