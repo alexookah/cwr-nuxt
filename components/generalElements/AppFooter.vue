@@ -7,8 +7,11 @@ const currentYear = new Date().getFullYear();
     <div class="container flex flex-wrap justify-between gap-12 my-24 md:gap-24">
       <div class="mr-auto">
         <Logo />
-        <WebsiteShortDescription />
-        <!-- <LangSwitcher class="mt-8" /> -->
+        <p class="mt-4 text-sm text-gray-700 xl:max-w-md">
+          Come With Reverse is an experimental dark pop band from Thessaloniki, Greece. Influenced by classical and
+          traditional-ethnic music, their debut album features innovative orchestration and timbre. Expressing all aspects of
+          the human experience, they aspire to collaborate on future projects with diverse genres of music.
+        </p>
       </div>
       <div class="w-3/7 lg:w-auto">
         <div class="mb-1 font-semibold">Information</div>
