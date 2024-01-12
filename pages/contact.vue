@@ -80,9 +80,9 @@ async function sendContactMessage() {
   sending.value = true;
   try {
     const { data } = await useAsyncGql('SendEmail', {
-      to: "alexlykesas@comewithreverse.com",
+      to: "contact@comewithreverse.com",
       from: contactForm.value.email,
-      subject: `Contact Us Inquiry: ${contactForm.value.subject}`,
+      subject: `Contact Us: ${contactForm.value.subject}`,
       body: `Name: ${contactForm.value.name}\n\nMessage: ${contactForm.value.message}`.replace(/\n/g, '<br>'),
       clientMutationId: "contactForm"
     });
