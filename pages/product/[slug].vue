@@ -8,11 +8,6 @@ const slug = route.params.slug as string;
 const { data } = (await useAsyncGql('getProduct', { slug })) as { data: { value: { product: Product } } };
 const product = ref<Product>(data?.value?.product);
 
-useHead({
-  title: product.value?.name ?? 'Product',
-  meta: [{ hid: 'description', name: 'description', content: product.value?.rawDescription ?? '' }],
-});
-
 const quantity = ref(1);
 const activeVariation = ref(null) as Ref<Variation | null>;
 const variation = ref([]) as Ref<Variation[]>;
@@ -63,12 +58,12 @@ const updateSelectedVariations = (variations: Attribute[]): void => {
 };
 
 const stockStatus = computed(() => type.value?.stockStatus || StockStatusEnum.OUT_OF_STOCK);
-const disabledAddToCart = computed(() => !type.value || stockStatus.value === StockStatusEnum.ON_BACKORDER || isUpdatingCart.value);
+const disabledAddToCart = computed(() => !type.value || stockStatus.value === StockStatusEnum.OUT_OF_STOCK || isUpdatingCart.value);
 </script>
 
 <template>
   <main class="container relative py-6 xl:max-w-7xl" v-if="product">
-
+    <SEOHead :info="product" />
     <div class="flex flex-col gap-10 md:flex-row md:justify-between lg:gap-24">
       <ProductImageGallery
         v-if="product.image?.sourceUrl"
@@ -79,7 +74,7 @@ const disabledAddToCart = computed(() => !type.value || stockStatus.value === St
         :node="type" />
       <NuxtImg v-else class="relative flex-1" src="/images/placeholder.jpg" :alt="product?.name || 'Product'" />
 
-      <div class="lg:max-w-md xl:max-w-lg md:py-2">
+      <div class="lg:max-w-md xl:max-w-lg md:py-2 w-full">
         <div class="flex justify-between mb-4">
           <div class="flex-1">
             <h1 class="flex flex-wrap items-center gap-2 mb-2 text-2xl font-sesmibold">
@@ -97,7 +92,7 @@ const disabledAddToCart = computed(() => !type.value || stockStatus.value === St
           </div>
         </div>
 
-        <div class="mb-8 font-light prose" v-html="product.description || product.shortDescription" />
+        <div class="mb-8 font-light prose" v-html="product.shortDescription || product.description" />
 
         <hr />
 
@@ -119,7 +114,7 @@ const disabledAddToCart = computed(() => !type.value || stockStatus.value === St
           </div>
         </form>
 
-        <div class="flex flex-wrap gap-4 my-8">
+        <div class="flex flex-wrap gap-4">
           <WishlistButton :product="product" />
           <ShareButton :product="product" />
         </div>
