@@ -10,7 +10,7 @@ const logoUrl = runtimeConfig?.public?.LOGO || null;
       <NuxtImg
         :width="50"
         :height="50"
-        src="../../cwr_small.png"
+        src="/images/cwr_small.png"
         fit="outside"
         format="webp"
         densities="x1 x2" />
