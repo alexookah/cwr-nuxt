@@ -31,9 +31,7 @@ const colorVariableImage = computed(() => {
       const hasMatchingSlug = paColor.value.some((color) => variation.slug.includes(color));
       return hasMatchingAttributes || hasMatchingSlug;
     });
-    if (activeColorImage?.length) {
-      return activeColorImage[0].image?.sourceUrl;
-    }
+    if (activeColorImage?.length) activeColorImage[0].image?.sourceUrl;
   }
   return null;
 });
@@ -62,7 +60,6 @@ const colorVariableImage = computed(() => {
         densities="x1 x2" />
     </NuxtLink>
     <div class="p-2">
-      <!-- <StarRating :rating="node.averageRating" :count="node.reviewCount" /> -->
       <NuxtLink :to="`/product/${formatURI(node.slug)}`" :title="node.name">
         <h2 class="mb-2 font-light leading-tight">{{ node.name }}</h2>
       </NuxtLink>
