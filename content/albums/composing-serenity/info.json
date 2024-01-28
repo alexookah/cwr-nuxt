@@ -1,0 +1,322 @@
+{
+  "id": "composing-serenity",
+  "name": "Composing Serenity – Album",
+  "slug": "composing-serenity",
+  "releaseDate": "2015-09-13",
+  "published": true,
+  "image": {
+    "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fcomposing-serenity%2Fimage.jpg?alt=media&token=4f8a6142-62b5-4bdf-9489-e13023ea59ec",
+    "title": "a2605876490_10.jpg"
+  },
+  "notes": "Artwork by David Paolinetti",
+  "songs": [
+    {
+      "name": "A Living Moment",
+      "links": [
+        {
+          "source": "lyrics",
+          "link": "https://genius.com/Come-with-reverse-a-living-moment-lyrics"
+        },
+        {
+          "source": "bandcamp",
+          "link": "https://comewithreverse.bandcamp.com/track/a-living-moment"
+        },
+        {
+          "source": "spotify",
+          "link": "https://open.spotify.com/track/0IT4P7lbItitiinb6LL3xb"
+        },
+        {
+          "source": "apple",
+          "link": "https://music.apple.com/us/album/a-living-moment/1237588702?i=1237588707"
+        }
+      ],
+      "audio": {
+        "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fcomposing-serenity%2Fsongs.0.audio.mp3?alt=media&token=96823df7-ef2b-49d5-99f0-f1be00e32a14",
+        "title": "A-Living-Moment.mp3"
+      }
+    },
+    {
+      "name": "Sullen Look",
+      "links": [
+        {
+          "source": "lyrics",
+          "link": "https://genius.com/Come-with-reverse-sullen-look-lyrics"
+        },
+        {
+          "source": "bandcamp",
+          "link": "https://comewithreverse.bandcamp.com/track/sullen-look"
+        },
+        {
+          "source": "spotify",
+          "link": "https://open.spotify.com/track/32Uhx3QE7Yp0Med5d1zkqf"
+        },
+        {
+          "source": "apple",
+          "link": "https://music.apple.com/us/album/sullen-look/1237588702?i=1237588715"
+        }
+      ],
+      "audio": {
+        "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fcomposing-serenity%2Fsongs.1.audio.mp3?alt=media&token=c48a6c4d-3d0d-442a-ab4c-92595a3e075e",
+        "title": "Sullen-Look.mp3"
+      }
+    },
+    {
+      "name": "Waiting For The Sunsets",
+      "links": [
+        {
+          "source": "lyrics",
+          "link": "https://genius.com/Come-with-reverse-waiting-for-the-sunsets-lyrics"
+        },
+        {
+          "source": "bandcamp",
+          "link": "https://comewithreverse.bandcamp.com/track/waiting-for-the-sunsets"
+        },
+        {
+          "source": "spotify",
+          "link": "https://open.spotify.com/track/5i3OAFZMdzyjvSb4SISH0M"
+        },
+        {
+          "source": "apple",
+          "link": "https://music.apple.com/us/album/waiting-for-the-sunsets/1237588702?i=1237588716"
+        }
+      ],
+      "audio": {
+        "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fcomposing-serenity%2Fsongs.2.audio.mp3?alt=media&token=a425ea1b-bdd5-4cb0-8116-a1700e55a01f",
+        "title": "Waiting-For-The-Sunsets.mp3"
+      }
+    },
+    {
+      "name": "All That Love",
+      "links": [
+        {
+          "source": "lyrics",
+          "link": "https://genius.com/Come-with-reverse-all-that-love-lyrics"
+        },
+        {
+          "source": "bandcamp",
+          "link": "https://comewithreverse.bandcamp.com/track/all-that-love-2"
+        },
+        {
+          "source": "spotify",
+          "link": "https://open.spotify.com/track/0aab7eybpYYxcS3Sg5XUUg"
+        },
+        {
+          "source": "apple",
+          "link": "https://music.apple.com/us/album/all-that-love/1237588702?i=1237588717"
+        }
+      ],
+      "audio": {
+        "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fcomposing-serenity%2Fsongs.3.audio.mp3?alt=media&token=b30f04ad-7ed0-4e6b-a0b7-9d37e8d0ad1f",
+        "title": "All-That-Love.mp3"
+      }
+    },
+    {
+      "name": "Democracy",
+      "links": [
+        {
+          "source": "youtube",
+          "link": "https://www.youtube.com/watch?v=MaCM78afFaM"
+        },
+        {
+          "source": "lyrics",
+          "link": "https://genius.com/Come-with-reverse-democracy-lyrics"
+        },
+        {
+          "source": "bandcamp",
+          "link": "https://genius.com/Come-with-reverse-democracy-lyrics"
+        },
+        {
+          "source": "spotify",
+          "link": "https://open.spotify.com/track/04jbm6Ouhm7yk5vX4C9JnC"
+        },
+        {
+          "source": "apple",
+          "link": "https://music.apple.com/us/album/democracy/1237588702?i=1237588718"
+        }
+      ],
+      "audio": {
+        "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fcomposing-serenity%2Fsongs.4.audio.mp3?alt=media&token=9c920102-d5a4-417c-a0ef-c906208e98e3",
+        "title": "Democracy.mp3"
+      }
+    },
+    {
+      "name": "Serenity",
+      "links": [
+        {
+          "source": "lyrics",
+          "link": "https://genius.com/Come-with-reverse-serenity-lyrics"
+        },
+        {
+          "source": "bandcamp",
+          "link": "https://comewithreverse.bandcamp.com/track/serenity"
+        },
+        {
+          "source": "spotify",
+          "link": "https://open.spotify.com/track/660OlPc0tfXATlmOIC11xH"
+        },
+        {
+          "source": "apple",
+          "link": "https://music.apple.com/us/album/serenity/1237588702?i=1237588719"
+        }
+      ],
+      "audio": {
+        "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fcomposing-serenity%2Fsongs.5.audio.mp3?alt=media&token=116f7545-6d59-48be-b26a-e080fc4f152c",
+        "title": "Serenity.mp3"
+      }
+    },
+    {
+      "name": "Lust Pace",
+      "links": [
+        {
+          "source": "lyrics",
+          "link": "https://genius.com/Come-with-reverse-lust-pace-lyrics"
+        },
+        {
+          "source": "bandcamp",
+          "link": "https://comewithreverse.bandcamp.com/track/lust-pace"
+        },
+        {
+          "source": "spotify",
+          "link": "https://open.spotify.com/track/3dwRQQg26GebLMvEwjjwxz"
+        },
+        {
+          "source": "apple",
+          "link": "https://music.apple.com/us/album/lust-pace/1237588702?i=1237588720"
+        }
+      ],
+      "audio": {
+        "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fcomposing-serenity%2Fsongs.6.audio.mp3?alt=media&token=7ec61680-6afa-49ee-b806-fe4c3151f253",
+        "title": "Lust-Pace.mp3"
+      }
+    },
+    {
+      "name": "Crawling In A Wire",
+      "links": [
+        {
+          "source": "youtube",
+          "link": "https://www.youtube.com/watch?v=wKnmihrJxG8"
+        },
+        {
+          "source": "lyrics",
+          "link": "https://genius.com/Come-with-reverse-crawling-in-a-wire-lyrics"
+        },
+        {
+          "source": "bandcamp",
+          "link": "https://comewithreverse.bandcamp.com/track/crawling-in-a-wire"
+        },
+        {
+          "source": "spotify",
+          "link": "https://open.spotify.com/track/2r26NlAYeNl7g04ex1uZS2"
+        },
+        {
+          "source": "apple",
+          "link": "https://music.apple.com/us/album/crawling-in-a-wire/1237588702?i=1237588961"
+        }
+      ],
+      "audio": {
+        "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fcomposing-serenity%2Fsongs.7.audio.mp3?alt=media&token=454b69e4-eeb9-4b06-a968-ef4c3a29c1ac",
+        "title": "Crawling-In-A-Wiresample.mp3"
+      }
+    },
+    {
+      "name": "Imeros",
+      "links": [
+        {
+          "source": "lyrics",
+          "link": "https://genius.com/Come-with-reverse-imeros-lyrics"
+        },
+        {
+          "source": "bandcamp",
+          "link": "https://comewithreverse.bandcamp.com/track/imeros"
+        },
+        {
+          "source": "spotify",
+          "link": "https://open.spotify.com/track/3TksAyHojkvbGt5IH4RVv7"
+        },
+        {
+          "source": "apple",
+          "link": "https://music.apple.com/us/album/imeros/1237588702?i=1237588962"
+        }
+      ],
+      "audio": {
+        "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fcomposing-serenity%2Fsongs.8.audio.mp3?alt=media&token=c2c287c1-162b-4dce-99d6-c60d741273c2",
+        "title": "Imeros.mp3"
+      }
+    },
+    {
+      "name": "Your Delight",
+      "links": [
+        {
+          "source": "lyrics",
+          "link": "https://genius.com/Come-with-reverse-your-delight-lyrics"
+        },
+        {
+          "source": "bandcamp",
+          "link": "https://comewithreverse.bandcamp.com/track/your-delight"
+        },
+        {
+          "source": "spotify",
+          "link": "https://open.spotify.com/track/0f0fbXzO1AZywT5MXvypaS"
+        },
+        {
+          "source": "apple",
+          "link": "https://music.apple.com/us/album/your-delight/1237588702?i=1237588963"
+        }
+      ],
+      "audio": {
+        "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fcomposing-serenity%2Fsongs.9.audio.mp3?alt=media&token=ff36e65d-e76a-47c4-b202-90b6e0d70585",
+        "title": "Your-Delight.mp3"
+      }
+    },
+    {
+      "name": "The Veil of Hypocrisy",
+      "links": [
+        {
+          "source": "lyrics",
+          "link": "https://genius.com/Come-with-reverse-the-veil-of-hypocrisy-lyrics"
+        },
+        {
+          "source": "bandcamp",
+          "link": "https://comewithreverse.bandcamp.com/track/the-veil-of-hypocrisy"
+        },
+        {
+          "source": "spotify",
+          "link": "https://open.spotify.com/track/3gPwnroQwXWKEUFdDTLJLh"
+        },
+        {
+          "source": "apple",
+          "link": "https://music.apple.com/us/album/the-veil-of-hypocrisy/1237588702?i=1237588964"
+        }
+      ],
+      "audio": {
+        "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fcomposing-serenity%2Fsongs.10.audio.mp3?alt=media&token=de61a478-2b62-40d9-9c42-a452aa17a01d",
+        "title": "The-Veil-Of-Hypocrisy.mp3"
+      }
+    },
+    {
+      "name": "Yanli Tamburism",
+      "links": [
+        {
+          "source": "lyrics",
+          "link": "https://genius.com/Come-with-reverse-yanli-tamburism-lyrics"
+        },
+        {
+          "source": "bandcamp",
+          "link": "https://comewithreverse.bandcamp.com/track/yanli-tamburism"
+        },
+        {
+          "source": "spotify",
+          "link": "https://open.spotify.com/track/6LF24AL8cmeDQ3HODnyGQr"
+        },
+        {
+          "source": "apple",
+          "link": "https://music.apple.com/us/album/yanli-tamburism/1237588702?i=1237588965"
+        }
+      ],
+      "audio": {
+        "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fcomposing-serenity%2Fsongs.11.audio.mp3?alt=media&token=6d42f7c1-52bf-4afd-9f08-662668c18949",
+        "title": "Yanli-Tamburism.mp3"
+      }
+    }
+  ]
+}

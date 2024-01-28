@@ -1,0 +1,43 @@
+{
+  "id": "sabine",
+  "name": "Sabine – Single",
+  "slug": "sabine",
+  "releaseDate": "2022-08-19",
+  "published": true,
+  "image": {
+    "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fsabine%2Fimage.jpg?alt=media&token=3c6ff89e-834d-419b-aa55-33246c8cee6a",
+    "title": "a0640216061_10.jpg"
+  },
+  "notes": "",
+  "songs": [
+    {
+      "name": "Sabine",
+      "links": [
+        {
+          "source": "youtube",
+          "link": "https://www.youtube.com/watch?v=KAAv2mltatA"
+        },
+        {
+          "source": "lyrics",
+          "link": "https://genius.com/Come-with-reverse-sabine-lyrics"
+        },
+        {
+          "source": "bandcamp",
+          "link": "https://comewithreverse.bandcamp.com/track/sabine"
+        },
+        {
+          "source": "spotify",
+          "link": "https://open.spotify.com/track/76UvKDZamXuWIfs1gRnK1i"
+        },
+        {
+          "source": "apple",
+          "link": "https://music.apple.com/us/album/sabine-single/1639361654"
+        }
+      ],
+      "audio": {
+        "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fsabine%2Fsongs.0.audio.mp3?alt=media&token=39a367b0-d351-4c2d-a7c2-75791ec39657",
+        "title": "sabine-sample.mp3"
+      }
+    }
+  ]
+}
