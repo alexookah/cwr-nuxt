@@ -7,7 +7,7 @@ const albums = await queryContent('albums').sort({ releaseDate: -1 }).find();
         <div class="grid grid-cols-[repeat(auto-fit,minmax(350px,1fr))] gap-5 content-center">
             <div v-for="album in albums" :key="album.slug" class="block mx-auto">
                 <router-link :to="`/album/${album.slug}`">
-                    <NuxtPicture :src="album.image.src" :alt="album.image.alt" height="400" width="400" format="avif,webp" loading="lazy" />
+                    <NuxtImg :src="album.image.src" :alt="album.image.alt" height="400" width="400" format="avif,webp" loading="lazy" />
                 </router-link>
             </div>
         </div>
