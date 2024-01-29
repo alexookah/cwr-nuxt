@@ -9,8 +9,15 @@ interface Photo {
 
 export default defineNuxtPlugin(nuxtApp => {
   nuxtApp.provide('openLightbox', (photos: Photo[], src: string) => {
+
+    const img = useImage();
+    const webpPhotos = photos.map(photo => ({
+      src: img(photo.src, { format: 'avif,webp' }),
+      alt: photo.alt
+    }))
+
     const lightbox = GLightbox({
-      elements: photos.map(photo => ({
+      elements: webpPhotos.map(photo => ({
         href: photo.src,
         type: 'image',
         alt: photo.alt
