@@ -7,6 +7,6 @@ const slug = route.params.slug as string;
 
 <template>
     <div>
-        this is album
+        this is event
     </div>
 </template>
