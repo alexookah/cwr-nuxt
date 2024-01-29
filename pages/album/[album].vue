@@ -1,8 +1,7 @@
 <script lang="ts" setup>
 const route = useRoute();
-const slug = route.params['album'] as string;
-console.log(route.params)
-const album = await queryContent('albums').where({ slug: slug }).findOne();
+const slug = route.params.album as string;
+const album = await queryContent('albums').where({ slug }).findOne();
 </script>
 
 <template>
