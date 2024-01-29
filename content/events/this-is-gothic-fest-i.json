@@ -1,0 +1,17 @@
+{
+  "id": "this-is-gothic-fest-i",
+  "name": "This is Gothic Fest I",
+  "slug": "this-is-gothic-fest-i",
+  "date": "02/03/2013",
+  "time": "20:00",
+  "published": true,
+  "image": {
+    "src": "this-is-gothic-fest-i.jpg",
+    "alt": "548735_428310290562632_1629725240_n.jpg"
+  },
+  "location": "Helsinky, Finland",
+  "eventLink": "https://www.facebook.com/events/354758574637608/",
+  "venueLink": "https://www.google.gr/maps/place/Bar+Lepakkomies/@60.1877486,24.9573755,17z/data=!3m1!4b1!4m5!3m4!1s0x4692097f272c3c4b:0x16d65db8018f60a4!8m2!3d60.1877486!4d24.9595642",
+  "artists": "Salvation AMP, Silent Scream, Murnau’s Playhouse, Come With Reverse",
+  "venue": "Lepakkomies"
+}
