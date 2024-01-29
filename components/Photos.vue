@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const photos = await queryContent('photos').findOne();
-console.log(photos.body);
 </script>
 
 <template>
