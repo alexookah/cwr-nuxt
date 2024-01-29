@@ -11,7 +11,8 @@ useHead({
   <main>
     <HeroBanner />
     <Albums />
-    
+    <Events />
+    <Photos />
 
   </main>
 </template>
