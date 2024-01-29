@@ -1,0 +1,16 @@
+{
+  "id": "ghost-house",
+  "name": "Ghost House",
+  "slug": "ghost-house",
+  "date": "23/02/2013",
+  "time": "23:00",
+  "published": true,
+  "image": {
+    "src": "ghost-house.png",
+    "alt": "857426_10200735649422640_665790007_o.png"
+  },
+  "location": "Athens, Greece",
+  "eventLink": "https://www.facebook.com/events/460870690632788/",
+  "venueLink": "https://www.google.com/maps/place/GhostHouse/@37.9783045,23.7200598,17z/data=!3m1!4b1!4m5!3m4!1s0x14a1bd23c359ca7f:0xb46842ac44bc4002!8m2!3d37.9783045!4d23.7222485",
+  "venue": "Ghost House"
+}

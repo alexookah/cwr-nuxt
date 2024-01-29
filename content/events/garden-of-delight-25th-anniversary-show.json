@@ -1,0 +1,17 @@
+{
+  "id": "garden-of-delight-25th-anniversary-show",
+  "name": "Garden of Delight – 25th Anniversary Show",
+  "slug": "garden-of-delight-25th-anniversary-show",
+  "date": "10/12/2016",
+  "time": "19:30",
+  "published": true,
+  "image": {
+    "src": "garden-of-delight-25th-anniversary-show.png",
+    "alt": "14258180_877168469054962_2832147681955067874_o.png"
+  },
+  "location": "Athens, Greece",
+  "eventLink": "https://www.facebook.com/events/1653524661559692",
+  "venueLink": "https://www.google.com/maps/place/Second+Skin/@37.9793579,23.7088965,17z/data=!3m1!4b1!4m5!3m4!1s0x14a1bcdee3842897:0xfcab98cdaffa76e8!8m2!3d37.9793579!4d23.7110852",
+  "artists": "INsCissorS, The Hidden Heroes 66, Anima Triste, Come With Reverse, Garden of Delight",
+  "venue": "Second Skin"
+}
