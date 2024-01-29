@@ -10,9 +10,12 @@ useHead({
 <template>
   <main>
     <HeroBanner />
-    <Albums />
-    <Events />
-    <Photos />
+
+    <div class="container">
+      <Albums />
+      <Events />
+      <Photos />
+    </div>
 
   </main>
 </template>
