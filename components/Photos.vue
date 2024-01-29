@@ -1,14 +1,20 @@
 <script setup lang="ts">
-const photos = await queryContent('photos').findOne();
+const result = await queryContent('photos').findOne();
+const photos = result.body
+
+const { $openLightbox } = useNuxtApp();
+function openLightbox(src: string) {
+  $openLightbox(photos, src);
+}
 </script>
 
 <template>
   <div>
     <h2 class="text-center text-5xl mt-20 mb-10">Photos</h2>
     <div class="masonry">
-      <div v-for="photo in photos.body" :key="photo.src" class="masonry-item">
-        <NuxtImg class="block w-full h-auto transition-transform duration-300 hover:scale-105" :src="photo.src"
-          :alt="photo.alt" format="avif,webp" loading="lazy" />
+      <div v-for="photo in photos" :key="photo.src" class="masonry-item">
+        <NuxtImg class="block w-full h-auto transition-transform duration-300 hover:scale-105 cursor-pointer" :src="photo.src"
+          :alt="photo.alt" format="avif,webp" loading="lazy" @click="openLightbox(photo.src)" />
       </div>
     </div>
   </div>
@@ -38,3 +44,4 @@ const photos = await queryContent('photos').findOne();
   }
 }
 </style>
+
