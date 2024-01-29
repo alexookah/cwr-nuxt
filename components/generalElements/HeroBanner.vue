@@ -1,6 +1,8 @@
   
 <template>
-    <NuxtImg src="/logo-black.svg" height="400" width="500" class="" alt="Header image logo" />
+    <div class="container flex justify-center pt-10"> 
+        <NuxtImg src="/logo-black.svg" height="400" width="500" class="" alt="Header image logo" />
+    </div>
     <!-- <swiper :modules="modules" :slides-per-view="1" :space-between="0" navigation :pagination="{ clickable: true }"
         :scrollbar="{ draggable: true }" @swiper="onSwiper" @slideChange="onSlideChange">
         <swiper-slide>
