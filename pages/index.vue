@@ -8,7 +8,7 @@ useHead({
 </script>
 
 <template>
-  <main>
+  <main class="py-10">
     <HeroBanner />
 
     <div class="container">

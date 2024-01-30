@@ -6,14 +6,14 @@ const currentYear = new Date().getFullYear();
   <footer class="bg-white order-last">
     <div class="container flex flex-wrap justify-between gap-12 my-24 md:gap-24">
       <div class="mr-auto">
-        <Logo />
+        <!-- <Logo /> -->
         <p class="mt-4 text-sm text-gray-700 xl:max-w-md">
           Come With Reverse is an experimental dark pop band from Thessaloniki, Greece. Influenced by classical and
           traditional-ethnic music, their debut album features innovative orchestration and timbre. Expressing all aspects of
           the human experience, they aspire to collaborate on future projects with diverse genres of music.
         </p>
       </div>
-      <div class="w-3/7 lg:w-auto">
+      <!-- <div class="w-3/7 lg:w-auto">
         <div class="mb-1 font-semibold">Information</div>
         <div class="text-sm">
           <a class="py-1.5 block"
@@ -23,16 +23,8 @@ const currentYear = new Date().getFullYear();
           <a href="/" class="py-1.5 block">Press</a>
           <a href="https://woonuxt.com/faq" class="py-1.5 block" rel="noreferrer" target="_blank">FAQ's</a>
         </div>
-      </div>
-      <div class="w-3/7 lg:w-auto">
-        <div class="mb-1 font-semibold">Products</div>
-        <div class="text-sm">
-          <NuxtLink to="/products" class="py-1.5 block">{{ $t('messages.shop.newArrivals') }}</NuxtLink>
-          <NuxtLink to="/products?filter=sale[true]" class="py-1.5 block">On sale</NuxtLink>
-          <NuxtLink to="/products?orderby=rating&order=ASC&filter=rating[1]" class="py-1.5 block">Top rated</NuxtLink>
-          <a href="/" class="py-1.5 block">{{ $t('messages.shop.giftCards') }}</a>
-        </div>
-      </div>
+      </div> -->
+      
       <div class="w-3/7 lg:w-auto">
         <div class="mb-1 font-semibold">{{ $t('messages.general.customerService') }}</div>
         <div class="text-sm">
@@ -48,7 +40,7 @@ const currentYear = new Date().getFullYear();
           <NuxtLink to="/my-account/" class="py-1.5 block">{{ $t('messages.account.myAccount') }}</NuxtLink>
           <NuxtLink to="/my-account/?tab=orders" class="py-1.5 block">{{ $t('messages.shop.orderHistory') }}</NuxtLink>
           <NuxtLink to="/wishlist" class="py-1.5 block">{{ $t('messages.shop.wishlist') }}</NuxtLink>
-          <a href="/" class="py-1.5 block">{{ $t('messages.general.newsletter') }}</a>
+          <!-- <a href="/" class="py-1.5 block">{{ $t('messages.general.newsletter') }}</a> -->
         </div>
       </div>
     </div>
