@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const result = await queryContent('photos').findOne();
-const photos = result.body
+const photos = result.images
 
 const { $openLightbox } = useNuxtApp();
 function openLightbox(src: string) {

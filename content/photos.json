@@ -1,130 +1,132 @@
-[
-  {
-    "src": "photos/images.0.png",
-    "alt": "Image 0"
-  },
-  {
-    "src": "photos/images.1.png",
-    "alt": "Image 1"
-  },
-  {
-    "src": "photos/images.2.png",
-    "alt": "Image 2"
-  },
-  {
-    "src": "photos/images.3.png",
-    "alt": "Image 3"
-  },
-  {
-    "src": "photos/images.4.png",
-    "alt": "Image 4"
-  },
-  {
-    "src": "photos/images.5.png",
-    "alt": "Image 5"
-  },
-  {
-    "src": "photos/images.6.jpg",
-    "alt": "Image 6"
-  },
-  {
-    "src": "photos/images.7.png",
-    "alt": "Image 7"
-  },
-  {
-    "src": "photos/images.8.jpg",
-    "alt": "Image 8"
-  },
-  {
-    "src": "photos/images.9.jpg",
-    "alt": "Image 9"
-  },
-  {
-    "src": "photos/images.10.jpg",
-    "alt": "Image 10"
-  },
-  {
-    "src": "photos/images.11.jpg",
-    "alt": "Image 11"
-  },
-  {
-    "src": "photos/images.12.jpg",
-    "alt": "Image 12"
-  },
-  {
-    "src": "photos/images.13.jpg",
-    "alt": "Image 13"
-  },
-  {
-    "src": "photos/images.14.png",
-    "alt": "Image 14"
-  },
-  {
-    "src": "photos/images.15.jpg",
-    "alt": "Image 15"
-  },
-  {
-    "src": "photos/images.16.jpg",
-    "alt": "Image 16"
-  },
-  {
-    "src": "photos/images.17.jpg",
-    "alt": "Image 17"
-  },
-  {
-    "src": "photos/images.18.jpg",
-    "alt": "Image 18"
-  },
-  {
-    "src": "photos/images.19.jpg",
-    "alt": "Image 19"
-  },
-  {
-    "src": "photos/images.20.jpg",
-    "alt": "Image 20"
-  },
-  {
-    "src": "photos/images.21.jpg",
-    "alt": "Image 21"
-  },
-  {
-    "src": "photos/images.22.jpg",
-    "alt": "Image 22"
-  },
-  {
-    "src": "photos/images.23.jpg",
-    "alt": "Image 23"
-  },
-  {
-    "src": "photos/images.24.jpg",
-    "alt": "Image 24"
-  },
-  {
-    "src": "photos/images.25.jpg",
-    "alt": "Image 25"
-  },
-  {
-    "src": "photos/images.26.jpg",
-    "alt": "Image 26"
-  },
-  {
-    "src": "photos/images.27.jpg",
-    "alt": "Image 27"
-  },
-  {
-    "src": "photos/images.28.jpg",
-    "alt": "Image 28"
-  },
-  {
-    "src": "photos/images.29.jpg",
-    "alt": "Image 29"
-  },
-  {
-    "src": "photos/images.30.jpg",
-    "alt": "Image 30"
-  },
-  {
-    "src": "photos/images.31.jpg",
-    "alt": "Image 31"
-  }
-]
+{
+  "images": [
+    {
+      "src": "photos/images.0.png",
+      "alt": "Image 0"
+    },
+    {
+      "src": "photos/images.1.png",
+      "alt": "Image 1"
+    },
+    {
+      "src": "photos/images.2.png",
+      "alt": "Image 2"
+    },
+    {
+      "src": "photos/images.3.png",
+      "alt": "Image 3"
+    },
+    {
+      "src": "photos/images.4.png",
+      "alt": "Image 4"
+    },
+    {
+      "src": "photos/images.5.png",
+      "alt": "Image 5"
+    },
+    {
+      "src": "photos/images.6.jpg",
+      "alt": "Image 6"
+    },
+    {
+      "src": "photos/images.7.png",
+      "alt": "Image 7"
+    },
+    {
+      "src": "photos/images.8.jpg",
+      "alt": "Image 8"
+    },
+    {
+      "src": "photos/images.9.jpg",
+      "alt": "Image 9"
+    },
+    {
+      "src": "photos/images.10.jpg",
+      "alt": "Image 10"
+    },
+    {
+      "src": "photos/images.11.jpg",
+      "alt": "Image 11"
+    },
+    {
+      "src": "photos/images.12.jpg",
+      "alt": "Image 12"
+    },
+    {
+      "src": "photos/images.13.jpg",
+      "alt": "Image 13"
+    },
+    {
+      "src": "photos/images.14.png",
+      "alt": "Image 14"
+    },
+    {
+      "src": "photos/images.15.jpg",
+      "alt": "Image 15"
+    },
+    {
+      "src": "photos/images.16.jpg",
+      "alt": "Image 16"
+    },
+    {
+      "src": "photos/images.17.jpg",
+      "alt": "Image 17"
+    },
+    {
+      "src": "photos/images.18.jpg",
+      "alt": "Image 18"
+    },
+    {
+      "src": "photos/images.19.jpg",
+      "alt": "Image 19"
+    },
+    {
+      "src": "photos/images.20.jpg",
+      "alt": "Image 20"
+    },
+    {
+      "src": "photos/images.21.jpg",
+      "alt": "Image 21"
+    },
+    {
+      "src": "photos/images.22.jpg",
+      "alt": "Image 22"
+    },
+    {
+      "src": "photos/images.23.jpg",
+      "alt": "Image 23"
+    },
+    {
+      "src": "photos/images.24.jpg",
+      "alt": "Image 24"
+    },
+    {
+      "src": "photos/images.25.jpg",
+      "alt": "Image 25"
+    },
+    {
+      "src": "photos/images.26.jpg",
+      "alt": "Image 26"
+    },
+    {
+      "src": "photos/images.27.jpg",
+      "alt": "Image 27"
+    },
+    {
+      "src": "photos/images.28.jpg",
+      "alt": "Image 28"
+    },
+    {
+      "src": "photos/images.29.jpg",
+      "alt": "Image 29"
+    },
+    {
+      "src": "photos/images.30.jpg",
+      "alt": "Image 30"
+    },
+    {
+      "src": "photos/images.31.jpg",
+      "alt": "Image 31"
+    }
+  ]
+}
