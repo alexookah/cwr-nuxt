@@ -1,7 +1,12 @@
 import { defineNuxtPlugin } from 'nuxt/app';
 import GLightbox from 'glightbox';
 import 'glightbox/dist/css/glightbox.min.css';
-import { Photo } from '../content/types/commonTypes';
+
+export interface Photo {
+  src: string;
+  alt?: string
+}
+
 
 export default defineNuxtPlugin(nuxtApp => {
   nuxtApp.provide('openLightbox', (photos: Photo[], src: string) => {
