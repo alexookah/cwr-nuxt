@@ -5,14 +5,7 @@ const currentYear = new Date().getFullYear();
 <template>
   <footer class="bg-white order-last">
     <div class="container flex flex-wrap justify-between gap-12 my-24 md:gap-24">
-      <div class="mr-auto">
-        <!-- <Logo /> -->
-        <p class="mt-4 text-sm text-gray-700 xl:max-w-md">
-          Come With Reverse is an experimental dark pop band from Thessaloniki, Greece. Influenced by classical and
-          traditional-ethnic music, their debut album features innovative orchestration and timbre. Expressing all aspects of
-          the human experience, they aspire to collaborate on future projects with diverse genres of music.
-        </p>
-      </div>
+
       <!-- <div class="w-3/7 lg:w-auto">
         <div class="mb-1 font-semibold">Information</div>
         <div class="text-sm">
@@ -24,7 +17,7 @@ const currentYear = new Date().getFullYear();
           <a href="https://woonuxt.com/faq" class="py-1.5 block" rel="noreferrer" target="_blank">FAQ's</a>
         </div>
       </div> -->
-      
+
       <div class="w-3/7 lg:w-auto">
         <div class="mb-1 font-semibold">{{ $t('messages.general.customerService') }}</div>
         <div class="text-sm">
@@ -44,9 +37,20 @@ const currentYear = new Date().getFullYear();
         </div>
       </div>
     </div>
+
+    <nav>
+      <ul class="flex items-center justify-center space-x-10 py-5">
+        <Socials />
+      </ul>
+    </nav>
+
     <div class="container border-t">
-      <div class="copywrite">
-        <p class="py-4 text-xs text-center">
+      <div class="copywrite text-center">
+
+        <p class="py-4">
+          <a href="mailto:contact@comewithreverse.com">contact@comewithreverse.com</a>
+        </p>
+        <p class="py-4 text-xs ">
           {{ currentYear }} © COME WITH REVERSE
         </p>
       </div>
