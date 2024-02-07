@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import type { AboutUs } from '#build/components';
-
 
 useSeoMeta({
   title: 'Come With Reverse - Experimental Dark Pop Band from Thessaloniki, Greece',
@@ -10,6 +8,7 @@ useSeoMeta({
   ogImage: `https://user-images.githubusercontent.com/5116925/218879668-f4c1f9fd-bef4-44b0-bc7f-e87d994aa3a1.png`,
   twitterCard: `summary_large_image`,
 });
+
 </script>
 
 <template>

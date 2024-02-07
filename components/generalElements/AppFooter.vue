@@ -4,7 +4,7 @@ const currentYear = new Date().getFullYear();
 
 <template>
   <footer class="bg-white order-last">
-    <div class="container flex flex-wrap justify-between gap-12 my-24 md:gap-24">
+    <div class="container flex flex-wrap justify-between gap-12 mt-12 md:gap-24">
 
       <!-- <div class="w-3/7 lg:w-auto">
         <div class="mb-1 font-semibold">Information</div>
@@ -39,7 +39,7 @@ const currentYear = new Date().getFullYear();
     </div>
 
     <nav>
-      <ul class="flex items-center justify-center space-x-10 py-5">
+      <ul class="flex items-center justify-center space-x-10 pb-5">
         <Socials />
       </ul>
     </nav>

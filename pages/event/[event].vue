@@ -3,8 +3,8 @@ const route = useRoute();
 const slug = route.params.event as string;
 const event = await queryContent('events').where({ slug }).findOne();
 
+const { $openLightbox } = useNuxtApp();
 const openImageInLightbox = (src: string) => {
-  const { $openLightbox } = useNuxtApp();
   $openLightbox([{ src }], src);
 };
 </script>
@@ -48,3 +48,10 @@ const openImageInLightbox = (src: string) => {
     </div>
   </div>
 </template>
+
+
+<style lang="postcss">
+html.glightbox-open {
+  overflow: unset;
+}
+</style>
