@@ -4,7 +4,7 @@ const photos = result.images;
 
 const { $openLightbox } = useNuxtApp();
 const openImageInLightbox = (src: string) => {
-  $openLightbox([{ src }], src);
+  $openLightbox(photos, src);
 };
 </script>
 
