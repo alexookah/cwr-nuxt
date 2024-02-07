@@ -24,12 +24,22 @@ const openImageInLightbox = (src: string) => {
 
     <div class="mb-6">
       <h2 class="text-2xl font-semibold mb-4 text-gray-700">Event Details</h2>
-      <p class="mb-2 text-gray-600"><strong>Date:</strong> {{ event.date }}</p>
-      <p class="mb-2 text-gray-600"><strong>Time:</strong> {{ event.time }}</p>
-      <p class="mb-2 text-gray-600"><strong>Location:</strong> {{ event.location }}</p>
       <p class="mb-2 text-gray-600">
+        <Icon name="mdi:calendar" class="mr-2" />
+        <strong>Date:</strong> {{ event.date }}
+      </p>
+      <p class="mb-2 text-gray-600">
+        <Icon name="mdi:clock-outline" class="mr-2" />
+        <strong>Time:</strong> {{ event.time }}
+      </p>
+      <p class="mb-2 text-gray-600">
+        <Icon name="mdi:map-marker-outline" class="mr-2" />
+        <strong>Location:</strong> {{ event.location }}
+      </p>
+      <p class="mb-2 text-gray-600">
+        <Icon name="mdi:building" class="mr-2" />
         <strong>Venue: </strong>
-        <a :href="event.venueLink" target="_blank" class="underline hover:text-blue-800"> {{ event.venue }}</a>
+        <a :href="event.venueLink" target="_blank" class="underline hover:text-blue-800">{{ event.venue }}</a>
       </p>
     </div>
 
