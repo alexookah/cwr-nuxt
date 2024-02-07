@@ -7,7 +7,7 @@
 
           <p class="text-center mb-6">
             Or email us directly at
-            <a href="mailto:contact@comewithreverse.com" class="text-blue-500 hover:text-blue-600">
+            <a href="mailto:contact@comewithreverse.com" class="text-gray-800 hover:text-gray-600">
               contact@comewithreverse.com
             </a>
           </p>

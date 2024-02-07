@@ -5,7 +5,6 @@ const currentYear = new Date().getFullYear();
 <template>
   <footer class="bg-white order-last">
     <div class="container flex flex-wrap justify-between gap-12 mt-12 md:gap-24">
-
       <!-- <div class="w-3/7 lg:w-auto">
         <div class="mb-1 font-semibold">Information</div>
         <div class="text-sm">
@@ -22,7 +21,7 @@ const currentYear = new Date().getFullYear();
         <div class="mb-1 font-semibold">{{ $t('messages.general.customerService') }}</div>
         <div class="text-sm">
           <NuxtLink to="/contact" class="py-1.5 block">Contact Us</NuxtLink>
-          <a href="/" class="py-1.5 block">Shipping & Returns</a>
+          <NuxtLink to="/shipping-and-returns" class="py-1.5 block">Shipping & Returns</NuxtLink>
           <a href="/" class="py-1.5 block">Privacy Policy</a>
           <a href="/" class="py-1.5 block">Terms & Conditions</a>
         </div>
@@ -39,20 +38,17 @@ const currentYear = new Date().getFullYear();
     </div>
 
     <nav>
-      <ul class="flex items-center justify-center space-x-10 pb-5">
+      <ul class="flex items-center justify-center space-x-10 py-5">
         <Socials />
       </ul>
     </nav>
 
     <div class="container border-t">
       <div class="copywrite text-center">
-
         <p class="py-4">
           <a href="mailto:contact@comewithreverse.com">contact@comewithreverse.com</a>
         </p>
-        <p class="py-4 text-xs ">
-          {{ currentYear }} © COME WITH REVERSE
-        </p>
+        <p class="py-4 text-xs">{{ currentYear }} © COME WITH REVERSE</p>
       </div>
     </div>
   </footer>
