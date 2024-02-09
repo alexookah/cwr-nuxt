@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { formatURI } = useHelpers();
-const events = await queryContent('events').sort({ releaseDate: -1 }).find();
+const events = await queryContent('events').sort({ date: -1 }).find();
 </script>
 
 <template>
