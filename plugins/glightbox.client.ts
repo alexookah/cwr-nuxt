@@ -7,7 +7,6 @@ export interface Photo {
   alt?: string
 }
 
-
 export default defineNuxtPlugin(nuxtApp => {
   nuxtApp.provide('openLightbox', (photos: Photo[], src: string) => {
 
@@ -21,7 +20,8 @@ export default defineNuxtPlugin(nuxtApp => {
       elements: webpPhotos.map(photo => ({
         href: photo.src,
         type: 'image',
-        alt: photo.alt
+        alt: photo.alt,
+        zoomable: false
       }))
     });
 

@@ -13,6 +13,10 @@ const getIconName = (source) => {
   };
   return iconMap[source.toLowerCase()] || '';
 };
+
+const reverseDateFormat = (dateString: string) => {
+  return dateString.split('-').reverse().join('-');
+}
 </script>
 
 <template>
@@ -21,6 +25,11 @@ const getIconName = (source) => {
       <NuxtImg :src="album.image.src" :alt="album.image.alt" class="w-full h-auto rounded-lg" width="600" height="600" />
     </div>
     <h1 class="text-center text-4xl mb-4">{{ album.name }}</h1>
+    <div class="text-center mb-6">
+      <span class="text-xl text-gray-500">Release Date: </span>
+      <span class="text-xl text-gray-700">{{ reverseDateFormat(album.releaseDate) }}</span>
+    </div>
+
     <div class="p-5 bg-gray-100 rounded-lg">
       <div v-html="album.notes" class="mb-5"></div>
       <div class="flex flex-col gap-2.5">
@@ -28,8 +37,12 @@ const getIconName = (source) => {
           <div class="flex justify-between items-center">
             <h2 class="flex-grow">{{ song.name }}</h2>
             <div class="flex gap-2">
-              <a v-for="link in song.links" :key="link.source" :href="link.link" target="_blank" class="flex items-center bg-gray-300 hover:bg-gray-600 px-2.5 py-1 rounded text-gray-800">
-                <!-- {{ link.source }} -->
+              <a
+                v-for="link in song.links"
+                :key="link.source"
+                :href="link.link"
+                target="_blank"
+                class="flex items-center bg-gray-300 hover:bg-gray-600 px-2.5 py-1 rounded text-gray-800">
                 <Icon :name="getIconName(link.source)" size="20" />
               </a>
             </div>
