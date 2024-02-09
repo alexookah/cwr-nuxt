@@ -5,11 +5,9 @@ export default defineNuxtConfig({
   modules: ['@nuxt/content'],
   app: {
     head: {
-      titleTemplate: `%s | Come with Reverse}`,
-      htmlAttrs: { lang: 'en' },
+      titleTemplate: `%s | Come with Reverse`,
       link: [{ rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' }],
     },
-    pageTransition: { name: 'page', mode: 'out-in' },
   },
 
   /**
