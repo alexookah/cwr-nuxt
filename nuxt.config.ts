@@ -3,6 +3,14 @@ export default defineNuxtConfig({
   extends: ['./woonuxt_base'],
   components: [{ path: './components', pathPrefix: false }],
   modules: ['@nuxt/content'],
+  app: {
+    head: {
+      titleTemplate: `%s | Come with Reverse}`,
+      htmlAttrs: { lang: 'en' },
+      link: [{ rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' }],
+    },
+    pageTransition: { name: 'page', mode: 'out-in' },
+  },
 
   /**
    * Depending on your servers capabilities, you may need to adjust the following settings.
