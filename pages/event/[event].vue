@@ -7,6 +7,10 @@ const { $openLightbox } = useNuxtApp();
 const openImageInLightbox = (src: string) => {
   $openLightbox([{ src }], src);
 };
+
+const reverseDateFormat = (dateString: string) => {
+  return dateString.split('-').reverse().join('-');
+}
 </script>
 
 
@@ -15,9 +19,7 @@ const openImageInLightbox = (src: string) => {
     <h1 class="text-4xl font-bold text-center mb-6 text-gray-800">{{ event.name }}</h1>
 
     <div class="mb-6 flex justify-center">
-      <NuxtImg
-        :src="event.image.src"
-        :alt="event.image.alt"
+      <NuxtImg :src="event.image.src" :alt="event.image.alt"
         class="w-full max-w-[300px] h-auto rounded-md shadow-sm cursor-pointer"
         @click="openImageInLightbox(event.image.src)" />
     </div>
@@ -26,7 +28,7 @@ const openImageInLightbox = (src: string) => {
       <h2 class="text-2xl font-semibold mb-4 text-gray-700">Event Details</h2>
       <p class="mb-2 text-gray-600">
         <Icon name="mdi:calendar" class="mr-2" />
-        <strong>Date:</strong> {{ event.date }}
+        <strong>Date:</strong> {{ reverseDateFormat(event.date) }}
       </p>
       <p class="mb-2 text-gray-600">
         <Icon name="mdi:clock-outline" class="mr-2" />
@@ -54,7 +56,9 @@ const openImageInLightbox = (src: string) => {
     </div>
 
     <div>
-      <a :href="event.eventLink" target="_blank" class="inline-block bg-gray-700 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded-full mt-4"> Event Link </a>
+      <a :href="event.eventLink" target="_blank"
+        class="inline-block bg-gray-700 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded-full mt-4"> Event Link
+      </a>
     </div>
   </div>
 </template>
