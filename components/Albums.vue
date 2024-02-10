@@ -3,7 +3,7 @@ const { formatURI } = useHelpers();
 const albums = await queryContent('albums').sort({ releaseDate: -1 }).find();
 
 function getFormat(src: string) {
-    return src.endsWith('.gif') ? undefined : 'webp';
+    return src.endsWith('.gif') ? undefined : "avif,webp";
 }
 </script>
 <template>
