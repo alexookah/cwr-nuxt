@@ -4,12 +4,12 @@ const slug = route.params.album as string;
 const album = await queryContent('albums').where({ slug }).findOne();
 
 function getLinkIconDetails(source: string) {
-  const linkIcons: Record<string, { name: string; ariaLabel: string }> = {
-    youtube: { name: 'mdi:youtube', ariaLabel: 'Watch on YouTube' },
-    lyrics: { name: 'mdi:music-note', ariaLabel: 'View lyrics' },
-    bandcamp: { name: 'mdi:bandcamp', ariaLabel: 'Listen on Bandcamp' },
-    spotify: { name: 'mdi:spotify', ariaLabel: 'Listen on Spotify' },
-    apple: { name: 'mdi:apple', ariaLabel: 'Listen on Apple Music' },
+  const linkIcons: Record<string, { name: string; altText: string }> = {
+    youtube: { name: 'mdi:youtube', altText: 'Watch on YouTube' },
+    lyrics: { name: 'mdi:music-note', altText: 'View lyrics' },
+    bandcamp: { name: 'mdi:bandcamp', altText: 'Listen on Bandcamp' },
+    spotify: { name: 'mdi:spotify', altText: 'Listen on Spotify' },
+    apple: { name: 'mdi:apple', altText: 'Listen on Apple Music' },
   };
 
   // Normalize the source to lowercase to ensure case-insensitive matching.
@@ -18,7 +18,7 @@ function getLinkIconDetails(source: string) {
 
   return {
     iconName: iconDetails ? iconDetails.name : '',
-    ariaLabel: iconDetails ? iconDetails.ariaLabel : 'Open link',
+    altText: iconDetails ? iconDetails.altText : 'Open link',
   };
 }
 
@@ -59,7 +59,7 @@ const reverseDateFormat = (dateString: string) => {
                 :key="link.source"
                 :href="link.link"
                 target="_blank"
-                :aria-label="getLinkIconDetails(link.source).ariaLabel"
+                :title="getLinkIconDetails(link.source).altText"
                 class="flex items-center bg-gray-300 hover:bg-gray-600 px-2.5 py-1 rounded text-gray-800">
                 <Icon :name="getLinkIconDetails(link.source).iconName" size="20" />
               </NuxtLink>
