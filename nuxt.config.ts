@@ -14,8 +14,11 @@ export default defineNuxtConfig({
     },
   },
 
+  site: {
+    url: 'https://comewithreverse.com',
+  },
+
   sitemap: {
-    hostname: 'https://comewithreverse.com',
     exclude: [
       '/my-account',
       '/order-summary',
