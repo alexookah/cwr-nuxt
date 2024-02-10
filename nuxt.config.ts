@@ -24,10 +24,10 @@ export default defineNuxtConfig({
       '/categories',
     ],
   },
-  image: {
-    provider: 'cloudflare',
-    baseURL: 'https:/cwr-nuxt.pages.dev'
-  },
+  // image: {
+  //   provider: 'cloudflare',
+  //   baseURL: 'https:/cwr-nuxt.pages.dev'
+  // },
 
   /**
    * Depending on your servers capabilities, you may need to adjust the following settings.
