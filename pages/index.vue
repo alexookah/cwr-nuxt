@@ -5,7 +5,7 @@ useSeoMeta({
   ogTitle: `Come With Reverse`,
   description: 'Come With Reverse is an experimental dark pop band from Thessaloniki, Greece. Influenced by classical and traditional-ethnic music, their debut album features innovative orchestration and timbre. Expressing all aspects of the human experience, they aspire to collaborate on future projects with diverse genres of music.',
   ogDescription: `Come With Reverse is an experimental dark pop band from Thessaloniki, Greece`,
-  ogImage: `https://user-images.githubusercontent.com/5116925/218879668-f4c1f9fd-bef4-44b0-bc7f-e87d994aa3a1.png`,
+  ogImage: 'https://comewithreverse.com/logo-black.svg',
   twitterCard: `summary_large_image`,
 });
 
