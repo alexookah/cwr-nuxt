@@ -1,3 +1,17 @@
+<script lang="ts" setup>
+
+useSeoMeta({
+  title: 'Shipping and Returns Policy',
+  description: 'Learn about the shipping times, delivery processes, and returns policy for Come with Reverse. Find out how to manage your order and what to do if your order is damaged or incorrect.',
+  ogTitle: 'Shipping and Returns - Come with Reverse',
+  ogDescription: 'Understand our shipping, delivery, and returns policy to ensure the best shopping experience with Come with Reverse. Get all the information you need about how your orders are handled.',
+  ogImage: 'https://comewithreverse.com/logo-black.svg',
+  twitterCard: 'summary_large_image',
+});
+
+</script>
+
+
 <template>
   <div class="max-w-4xl mx-auto p-8">
     <h1 class="text-3xl font-bold text-center mb-8">Shipping and Returns</h1>
