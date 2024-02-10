@@ -11,6 +11,7 @@ const logoUrl = runtimeConfig?.public?.LOGO || null;
         :width="50"
         :height="50"
         src="/cwr_small.png"
+        alt="Come with Reverse small logo"
         fit="outside"
         format="webp"
         densities="x1 x2" />
