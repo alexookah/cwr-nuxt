@@ -14,9 +14,18 @@ const getIconName = (source) => {
   return iconMap[source.toLowerCase()] || '';
 };
 
+useSeoMeta({
+  title: `${album.name}`,
+  ogTitle: `${album.name}`,
+  description: `Discover "${album.name}", a remarkable album by Come With Reverse, released on ${album.releaseDate}.`,
+  ogDescription: `Listen to "${album.name}", an experimental dark pop album by Come With Reverse. Available now.`,
+  ogImage: `https://comewithreverse.com/${album.image.src}`,
+  twitterCard: `summary_large_image`,
+});
+
 const reverseDateFormat = (dateString: string) => {
   return dateString.split('-').reverse().join('-');
-}
+};
 </script>
 
 <template>
