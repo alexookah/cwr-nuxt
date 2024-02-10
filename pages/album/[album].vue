@@ -27,7 +27,7 @@ const reverseDateFormat = (dateString: string) => {
     <h1 class="text-center text-4xl mb-4">{{ album.name }}</h1>
     <div class="text-center mb-6">
       <span class="text-xl text-gray-500">Release Date: </span>
-      <span class="text-xl text-gray-700">{{ reverseDateFormat(album.releaseDate) }}</span>
+      <span class="text-xl text-gray-500">{{ reverseDateFormat(album.releaseDate) }}</span>
     </div>
 
     <div class="p-5 bg-gray-100 rounded-lg">
