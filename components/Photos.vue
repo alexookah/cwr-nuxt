@@ -17,7 +17,7 @@ const openImageInLightbox = (src: string) => {
           class="block w-full h-auto transition-transform duration-300 hover:scale-105 cursor-pointer"
           :src="photo.src"
           :alt="photo.alt"
-          format="webp"
+          format="avif,webp"
           loading="lazy"
           @click="openImageInLightbox(photo.src)" />
       </div>

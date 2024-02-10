@@ -39,7 +39,7 @@ const reverseDateFormat = (dateString: string) => {
 <template>
   <div class="max-w-2xl md:max-w-3xl mx-auto p-5">
     <div class="flex justify-center mb-5">
-      <NuxtImg :src="album.image.src" :alt="album.image.alt" class="w-full h-auto rounded-lg" width="600" height="600" />
+      <NuxtImg :src="album.image.src" :alt="album.image.alt" format="avif,webp" class="w-full h-auto rounded-lg" width="600" height="600" />
     </div>
     <h1 class="text-center text-4xl mb-4">{{ album.name }}</h1>
     <div class="text-center mb-6 text-xl text-gray-600">

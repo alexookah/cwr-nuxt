@@ -37,6 +37,7 @@ useSeoMeta({
       <NuxtImg
         :src="event.image.src"
         :alt="event.image.alt"
+        format="avif,webp"
         class="w-full max-w-[300px] h-auto rounded-md shadow-sm cursor-pointer"
         @click="openImageInLightbox(event.image.src)" />
     </div>
