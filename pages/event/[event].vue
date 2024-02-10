@@ -19,7 +19,7 @@ const description = event.artists
 useSeoMeta({
   title: `${event.name} - Event in ${event.location}`,
   description,
-  ogTitle: `${event.name}`,
+  ogTitle: `${event.name} - Come with Reverse`,
   ogDescription: event.artists
     ? `Experience an unforgettable night at ${event.name} with artists ${event.artists} | Come with Reverse`
     : `Experience an unforgettable night at ${event.name} | Come with Reverse`,

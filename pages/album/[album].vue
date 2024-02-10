@@ -16,7 +16,7 @@ const getIconName = (source) => {
 
 useSeoMeta({
   title: `${album.name}`,
-  ogTitle: `${album.name}`,
+  ogTitle: `${album.name} - Come With Reverse`,
   description: `Discover "${album.name}", a remarkable album by Come With Reverse, released on ${album.releaseDate}.`,
   ogDescription: `Listen to "${album.name}", an experimental dark pop album by Come With Reverse. Available now.`,
   ogImage: `https://comewithreverse.com/${album.image.src}`,
