@@ -26,9 +26,7 @@ const currentYear = new Date().getFullYear();
     </div>
 
     <nav>
-      <ul class="flex items-center justify-center space-x-10 py-5">
-        <Socials />
-      </ul>
+      <Socials class="pb-2" />
     </nav>
 
     <div class="container border-t">
