@@ -20,7 +20,7 @@ export default {
 <template>
   <ul class="flex justify-center gap-2 sm:gap-4 flex-wrap">
     <li v-for="link in socialLinks" :key="link.name" class="hover:bg-gray-100 p-1 sm:p-2 rounded-full transition-all">
-      <NuxtLink :to="link.url" target="_blank" class="flex items-center justify-center">
+      <NuxtLink :to="link.url" target="_blank" class="flex items-center justify-center" :aria-label="`Follow us on ${link.name}`">
         <Icon :name="link.icon" class="w-6 h-6 sm:w-8 sm:h-8" />
       </NuxtLink>
     </li>
