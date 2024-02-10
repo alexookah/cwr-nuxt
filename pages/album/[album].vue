@@ -3,16 +3,24 @@ const route = useRoute();
 const slug = route.params.album as string;
 const album = await queryContent('albums').where({ slug }).findOne();
 
-const getIconName = (source) => {
-  const iconMap = {
-    youtube: 'mdi:youtube',
-    lyrics: 'mdi:music-note',
-    bandcamp: 'mdi:bandcamp',
-    spotify: 'mdi:spotify',
-    apple: 'mdi:apple',
+function getLinkIconDetails(source: string) {
+  const linkIcons: Record<string, { name: string; ariaLabel: string }> = {
+    youtube: { name: 'mdi:youtube', ariaLabel: 'Watch on YouTube' },
+    lyrics: { name: 'mdi:music-note', ariaLabel: 'View lyrics' },
+    bandcamp: { name: 'mdi:bandcamp', ariaLabel: 'Listen on Bandcamp' },
+    spotify: { name: 'mdi:spotify', ariaLabel: 'Listen on Spotify' },
+    apple: { name: 'mdi:apple', ariaLabel: 'Listen on Apple Music' },
   };
-  return iconMap[source.toLowerCase()] || '';
-};
+
+  // Normalize the source to lowercase to ensure case-insensitive matching.
+  const safeSource = source.toLowerCase();
+  const iconDetails = linkIcons[safeSource];
+
+  return {
+    iconName: iconDetails ? iconDetails.name : '',
+    ariaLabel: iconDetails ? iconDetails.ariaLabel : 'Open link',
+  };
+}
 
 useSeoMeta({
   title: `${album.name}`,
@@ -34,9 +42,9 @@ const reverseDateFormat = (dateString: string) => {
       <NuxtImg :src="album.image.src" :alt="album.image.alt" class="w-full h-auto rounded-lg" width="600" height="600" />
     </div>
     <h1 class="text-center text-4xl mb-4">{{ album.name }}</h1>
-    <div class="text-center mb-6">
-      <span class="text-xl text-gray-500">Release Date: </span>
-      <span class="text-xl text-gray-500">{{ reverseDateFormat(album.releaseDate) }}</span>
+    <div class="text-center mb-6 text-xl text-gray-600">
+      <span>Release Date: </span>
+      <span>{{ reverseDateFormat(album.releaseDate) }}</span>
     </div>
 
     <div class="p-5 bg-gray-100 rounded-lg">
@@ -46,14 +54,15 @@ const reverseDateFormat = (dateString: string) => {
           <div class="flex justify-between items-center">
             <h2 class="flex-grow">{{ song.name }}</h2>
             <div class="flex gap-2">
-              <a
+              <NuxtLink
                 v-for="link in song.links"
                 :key="link.source"
                 :href="link.link"
                 target="_blank"
+                :aria-label="getLinkIconDetails(link.source).ariaLabel"
                 class="flex items-center bg-gray-300 hover:bg-gray-600 px-2.5 py-1 rounded text-gray-800">
-                <Icon :name="getIconName(link.source)" size="20" />
-              </a>
+                <Icon :name="getLinkIconDetails(link.source).iconName" size="20" />
+              </NuxtLink>
             </div>
           </div>
         </div>
