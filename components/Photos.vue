@@ -43,11 +43,11 @@ const openImageInLightbox = (src: string) => {
   }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .masonry {
     column-count: 1;
   }
-}
+} */
 
 html.glightbox-open {
   overflow: unset;
