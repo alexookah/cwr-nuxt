@@ -24,3 +24,12 @@ useSeoMeta({
 
   </main>
 </template>
+
+<style lang="postcss">
+h1 {
+  @apply text-4xl
+}
+h2 {
+  @apply text-4xl
+}
+</style>

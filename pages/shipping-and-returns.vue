@@ -14,9 +14,9 @@ useSeoMeta({
 
 <template>
   <div class="max-w-4xl mx-auto p-8">
-    <h1 class="text-3xl font-bold text-center mb-8">Shipping and Returns</h1>
+    <h1 class="font-bold text-center mb-8">Shipping and Returns</h1>
     <section class="mb-8">
-      <h2 class="text-2xl font-bold mb-4">Delivery</h2>
+      <h2 class="font-bold mb-4">Delivery</h2>
       <div class="mb-6">
         <p class="font-semibold mb-2">When will I get my order?</p>
         <p class="mb-4">
@@ -51,7 +51,7 @@ useSeoMeta({
     </section>
 
     <section class="mb-8">
-      <h2 class="text-2xl font-bold mb-4">Orders</h2>
+      <h2 class="font-bold mb-4">Orders</h2>
       <p class="mb-6">
         <span class="font-semibold">How are your products made?</span> We work with a print-on-demand drop shipper. They have locations worldwide, so depending on where you are,
         your orders are printed and shipped from the facility that can do it most efficiently!
@@ -64,7 +64,7 @@ useSeoMeta({
     </section>
 
     <section>
-      <h2 class="text-2xl font-bold mb-4">Returns</h2>
+      <h2 class="font-bold mb-4">Returns</h2>
       <p class="mb-6">
         <span class="font-semibold">What’s your return policy?</span> We don’t offer returns and exchanges, but if there’s something wrong with your order, please let us know by
         contacting us at <a href="mailto:contact@comewithreverse.com" class="text-gray-800 hover:text-gray-600">contact@comewithreverse.com</a>!
@@ -82,3 +82,12 @@ useSeoMeta({
     </section>
   </div>
 </template>
+
+<style lang="postcss">
+h1 {
+  @apply text-4xl
+}
+h2 {
+  @apply text-3xl
+}
+</style>
