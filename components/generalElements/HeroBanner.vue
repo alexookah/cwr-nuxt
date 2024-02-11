@@ -2,7 +2,7 @@
 <template>
   <div class="container flex flex-col justify-center pt-10 items-center">
     <NuxtImg src="/logo-black.svg" height="400" width="500" class="" alt="Come with Reverse logo" />
-    <h1 class="text-4xl pt-6">Dark Side of the Pop</h1>
+    <h1 class="text-4xl pt-12">Dark Side of the Pop</h1>
   </div>
   <!-- <swiper :modules="modules" :slides-per-view="1" :space-between="0" navigation :pagination="{ clickable: true }"
         :scrollbar="{ draggable: true }" @swiper="onSwiper" @slideChange="onSlideChange">

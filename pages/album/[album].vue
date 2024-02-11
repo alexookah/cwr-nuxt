@@ -53,7 +53,7 @@ const reverseDateFormat = (dateString: string) => {
         <div v-for="song in album.songs" :key="song.name" class="bg-gray-200 p-2.5 rounded-lg">
           <div class="flex justify-between items-center">
             <h2 class="flex-grow">{{ song.name }}</h2>
-            <div class="flex gap-2">
+            <div class="flex gap-2 pl-3">
               <NuxtLink
                 v-for="link in song.links"
                 :key="link.source"
