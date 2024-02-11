@@ -7,9 +7,7 @@ export default defineNuxtConfig({
     head: {
       titleTemplate: `%s | Come with Reverse`,
       link: [
-        { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' },
-        // { rel: 'icon', href: '/favicon.png', type: 'image/png' },
-        // { rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' }
+        { rel: 'icon', href: '/favicon.png', type: 'image/png' },
       ],
     },
   },
