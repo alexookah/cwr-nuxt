@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="text-center mt-20 mb-10">About Us</h2>
+    <h2 class="text-4xl text-center mt-20 mb-10">About Us</h2>
     <div class="max-w-4xl mx-auto p-5">
       <NuxtImg src="/cwr_members.jpg" class="pb-5 object-contain w-full" alt="Come with Reverse - about us" format="avif,webp" />
       <p class="text-base text-gray-700 mb-6">

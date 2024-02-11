@@ -10,7 +10,7 @@ const openImageInLightbox = (src: string) => {
 
 <template>
   <div>
-    <h2 class="text-center mt-20 mb-10">Photos</h2>
+    <h2 class="text-4xl text-center mt-20 mb-10">Photos</h2>
     <div class="masonry">
       <div v-for="photo in photos" :key="photo.src" class="masonry-item">
         <NuxtImg

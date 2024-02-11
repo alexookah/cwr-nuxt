@@ -10,7 +10,7 @@
 </template>
   
   
-  <script>
+<script>
 export default {
   props: {
     error: Object,
