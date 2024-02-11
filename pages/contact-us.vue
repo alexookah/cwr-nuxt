@@ -3,7 +3,7 @@
     <div class="max-w-3xl mx-auto">
       <div class="bg-white shadow-lg rounded-lg overflow-hidden">
         <div class="px-6 py-8 sm:p-10 sm:pb-6">
-          <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">Contact Us</h3>
+          <h3 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">Contact us</h3>
 
           <p class="text-center mb-6">
             Or email us directly at
