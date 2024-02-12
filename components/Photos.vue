@@ -37,7 +37,7 @@ const openImageInLightbox = (src: string) => {
   padding-bottom: 1em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .masonry {
     column-count: 2;
   }
