@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 
 useSeoMeta({
-  title: 'Experimental Dark Pop Band from Thessaloniki',
+  title: 'Experimental Dark Pop Band',
   ogTitle: 'Experimental Dark Pop Band from Thessaloniki - Come With Reverse',
-  description: 'Come With Reverse is an experimental dark pop band from Thessaloniki, Greece. Influenced by classical and traditional-ethnic music, their debut album features innovative orchestration and timbre. Expressing all aspects of the human experience, they aspire to collaborate on future projects with diverse genres of music.',
+  description: 'Come With Reverse, a dark pop band from Thessaloniki, blends classical and ethnic influences in their debut album, aiming for diverse musical collaborations',
   ogDescription: 'Come With Reverse is an experimental dark pop band',
   ogImage: 'https://comewithreverse.com/logo-black.svg',
   twitterCard: 'summary_large_image',
