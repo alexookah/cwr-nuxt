@@ -19,6 +19,8 @@ const openImageInLightbox = (src: string) => {
           :alt="photo.alt"
           format="avif,webp"
           loading="lazy"
+          :width="photo.width"
+          :height="photo.height"
           @click="openImageInLightbox(photo.src)" />
       </div>
     </div>

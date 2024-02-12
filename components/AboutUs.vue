@@ -6,6 +6,8 @@
         src="/cwr_members.jpg"
         class="pb-5 object-contain w-full"
         alt="Three members of Come with Reverse walking side by side on a cobblestone street with historical stone walls in the background, in Thessaloniki, Greece."
+        width="960"
+        height="640"
         format="avif,webp" />
       <p class="text-base text-gray-700 mb-6">
         <span class="font-semibold">Come with Reverse</span> is a band formed in 2010 in Thessaloniki, Greece. Our band consists of Petros Leivadas (vocals - guitars), Alexander
