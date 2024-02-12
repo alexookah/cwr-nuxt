@@ -9,7 +9,7 @@
         classical music, extending to traditional-ethnic music from various countries.
       </p>
       <p class="text-base text-gray-700 mb-6">
-        Initially, we embraced an experimental/avant-garde approach, gradually evolving into the darker realms of pop music. This journey influenced our debut album, where we
+        Initially, we embraced an experimental / avant-garde approach, gradually evolving into the darker realms of pop music. This journey influenced our debut album, where we
         ventured beyond the conventional boundaries of pop music in structure, orchestration, and timbre.
       </p>
       <p class="text-base text-gray-700 mb-6">
