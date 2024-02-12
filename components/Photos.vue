@@ -34,7 +34,7 @@ const openImageInLightbox = (src: string) => {
 
 .masonry-item {
   break-inside: avoid-column;
-  margin-bottom: 1em;
+  padding-bottom: 1em;
 }
 
 @media (max-width: 768px) {
