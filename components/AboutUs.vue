@@ -2,7 +2,11 @@
   <div>
     <h2 class="text-4xl text-center mt-20 mb-10">About Us</h2>
     <div class="max-w-4xl mx-auto p-5 text-justify">
-      <NuxtImg src="/cwr_members.jpg" class="pb-5 object-contain w-full" alt="Come with Reverse - about us" format="avif,webp" />
+      <NuxtImg
+        src="/cwr_members.jpg"
+        class="pb-5 object-contain w-full"
+        alt="Three members of Come With Reverse walking side by side on a cobblestone street with historical stone walls in the background, in Thessaloniki, Greece."
+        format="avif,webp" />
       <p class="text-base text-gray-700 mb-6">
         <span class="font-semibold">Come With Reverse</span> is a band formed in 2010 in Thessaloniki, Greece. Our band consists of Petros Leivadas (vocals - guitars), Alexander
         Lykesas (drums), Alexander Passalides (keyboard), and Bob Architektonidis (manager). Influenced by a broad spectrum of music genres, our members have a background in
