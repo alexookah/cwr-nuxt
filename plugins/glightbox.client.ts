@@ -14,10 +14,8 @@ export default defineNuxtPlugin(nuxtApp => {
 
     const img = useImage();
     const webpPhotos = photos.map(photo => ({
-      src: img(photo.src, { format: 'avif,webp' }),
+      src: img(photo.src, { format: 'avif,webp', width: photo.width, height: photo.height},),
       alt: photo.alt,
-      height: photo.height,
-      width: photo.width
     }))
 
     const lightbox = GLightbox({
