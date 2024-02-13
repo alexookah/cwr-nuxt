@@ -12,7 +12,7 @@ export default defineNuxtPlugin(nuxtApp => {
 
     const img = useImage();
     const webpPhotos = photos.map(photo => ({
-      src: img(photo.src, { format: 'avif,webp' }),
+      src: img(photo.src, { format: 'webp' }),
       alt: photo.alt
     }))
 
