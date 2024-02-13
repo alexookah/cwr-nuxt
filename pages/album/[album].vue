@@ -42,6 +42,7 @@ const reverseDateFormat = (dateString: string) => {
       <template v-if="album.video">
         <video autoplay loop muted playsinline width="600" height="600" :poster="album.image.src">
           <source :src="album.video.src" type="video/webm" />
+          <source :src="album.video.mp4" type="video/mp4" />
           <img :src="album.image.src" :alt="album.image.alt" />
         </video>
       </template>
