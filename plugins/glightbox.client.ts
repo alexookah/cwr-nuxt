@@ -4,7 +4,9 @@ import 'glightbox/dist/css/glightbox.min.css';
 
 export interface Photo {
   src: string;
-  alt?: string
+  alt: string
+  width: number
+  height: number
 }
 
 export default defineNuxtPlugin(nuxtApp => {
@@ -12,8 +14,10 @@ export default defineNuxtPlugin(nuxtApp => {
 
     const img = useImage();
     const webpPhotos = photos.map(photo => ({
-      src: img(photo.src, { format: 'webp' }),
-      alt: photo.alt
+      src: img(photo.src, { format: 'avif,webp' }),
+      alt: photo.alt,
+      height: photo.height,
+      width: photo.width
     }))
 
     const lightbox = GLightbox({
