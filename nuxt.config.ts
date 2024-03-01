@@ -22,6 +22,7 @@ export default defineNuxtConfig({
       '/categories',
     ],
   },
+  pageMiddleware: ['redirects'],
 
   /**
    * Depending on your servers capabilities, you may need to adjust the following settings.
