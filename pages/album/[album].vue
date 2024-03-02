@@ -26,7 +26,7 @@ useSeoMeta({
   title: `${album.name}`,
   ogTitle: `${album.name} - Come with Reverse`,
   description: `Discover "${album.name}", a remarkable album by Come with Reverse, released on ${album.releaseDate}.`,
-  ogDescription: `Listen to "${album.name}", an experimental dark pop album by Come with Reverse. Available now.`,
+  ogDescription: `Listen to "${album.name}", a dark pop album by Come with Reverse. Available now.`,
   ogImage: `https://comewithreverse.com/${album.image.src}`,
   twitterCard: `summary_large_image`,
 });
