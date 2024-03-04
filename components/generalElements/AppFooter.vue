@@ -17,7 +17,7 @@ const currentYear = new Date().getFullYear();
       <div class="w-3/7 lg:w-auto">
         <!-- <div class="mb-1 font-semibold">{{ $t('messages.account.myAccount') }}</div> -->
         <div class="text-sm">
-          <NuxtLink to="/my-account/" class="py-1.5 block">{{ $t('messages.account.myAccount') }}</NuxtLink>
+          <NuxtLink to="/my-account" class="py-1.5 block">{{ $t('messages.account.myAccount') }}</NuxtLink>
           <NuxtLink to="/my-account/?tab=orders" class="py-1.5 block">{{ $t('messages.shop.orderHistory') }}</NuxtLink>
           <NuxtLink to="/wishlist" class="py-1.5 block">{{ $t('messages.shop.wishlist') }}</NuxtLink>
           <!-- <a href="/" class="py-1.5 block">{{ $t('messages.general.newsletter') }}</a> -->
