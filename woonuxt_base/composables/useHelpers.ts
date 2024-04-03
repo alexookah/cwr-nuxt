@@ -1,10 +1,12 @@
+import pkg from '~/woonuxt_base/package.json';
+
 // A collection of helper functions.
 export function useHelpers() {
   const route = useRoute();
   const runtimeConfig = useRuntimeConfig();
 
   const isShowingMobileMenu = useState<boolean>('isShowingMobileMenu', () => false);
-  const wooNuxtVersionInfo: string = runtimeConfig.public?.version || '0.0.0';
+  const wooNuxtVersionInfo: string = pkg.version || '0.0.0';
   const productsPerPage: number = runtimeConfig.public?.PRODUCTS_PER_PAGE || 24;
   const wooNuxtSEO = runtimeConfig.public?.WOO_NUXT_SEO as WooNuxtSEOItem[];
   const frontEndUrl = runtimeConfig.public?.FRONT_END_URL?.replace(/\/$/, '') || null;
@@ -153,6 +155,20 @@ export function useHelpers() {
     return str === null ? '' : str.replace(/(<([^>]+)>)/gi, '');
   };
 
+  /**
+   * Debounces a function.
+   * @param {Function}
+   * @param {number} delay - The delay in milliseconds.
+   * @returns {Function} The debounced function.
+   */
+  const debounce = (func: Function, delay: number = 100) => {
+    let inDebounce: NodeJS.Timeout;
+    return function (this: any, ...args: any[]) {
+      clearTimeout(inDebounce);
+      inDebounce = setTimeout(() => func.apply(this, args), delay);
+    };
+  };
+
   return {
     isShowingMobileMenu,
     wooNuxtVersionInfo,
@@ -175,5 +191,6 @@ export function useHelpers() {
     formatPrice,
     scrollToTop,
     stripHtml,
+    debounce,
   };
 }
