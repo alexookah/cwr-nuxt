@@ -2,9 +2,12 @@ import { createResolver } from '@nuxt/kit';
 const { resolve } = createResolver(import.meta.url);
 
 export default defineNuxtConfig({
+  future: {
+    compatibilityVersion: 4,
+  },
+
   app: {
     head: {
-      titleTemplate: `%s | ${process.env.SITE_TITLE ?? 'WooNuxt'}`,
       htmlAttrs: { lang: 'en' },
       link: [{ rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
     },
@@ -15,9 +18,9 @@ export default defineNuxtConfig({
     sharedPrerenderData: true,
   },
 
-  plugins: [resolve('./plugins/init.ts')],
+  plugins: [resolve('./app/plugins/init.ts')],
 
-  components: [{ path: resolve('./components'), pathPrefix: false }],
+  components: [{ path: resolve('./app/components'), pathPrefix: false }],
 
   modules: ['woonuxt-settings', 'nuxt-graphql-client', '@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxt/image', '@nuxtjs/i18n'],
 
@@ -30,43 +33,29 @@ export default defineNuxtConfig({
     },
   },
 
-  image: {
-    provider: 'ipx',
-    domains: process.env.NUXT_IMAGE_DOMAINS ? process.env.NUXT_IMAGE_DOMAINS.replace(/ /g, '').split(',') : [],
+  alias: {
+    '#constants': resolve('./app/constants'),
+    '#woo': '../.nuxt/gql/default',
   },
 
   hooks: {
     'pages:extend'(pages) {
-      pages.push({
-        name: 'product-page-pager',
-        path: '/products/page/:pageNumber',
-        file: resolve('./pages/products.vue'),
-      });
-      pages.push({
-        name: 'product-category-page',
-        path: '/product-category/:categorySlug',
-        file: resolve('./pages/product-category/[slug].vue'),
-      });
-      pages.push({
-        name: 'product-category-page-pager',
-        path: '/product-category/:categorySlug/page/:pageNumber',
-        file: resolve('./pages/product-category/[slug].vue'),
-      });
-      pages.push({
-        name: 'order-received',
-        path: '/checkout/order-received/:orderId',
-        file: resolve('./pages/order-summary.vue'),
-      });
-      pages.push({
-        name: 'order-summary',
-        path: '/order-summary/:orderId',
-        file: resolve('./pages/order-summary.vue'),
-      });
+      const addPage = (name: string, path: string, file: string) => {
+        pages.push({ name, path, file: resolve(`./app/pages/${file}`) });
+      };
+
+      addPage('product-page-pager', '/products/page/:pageNumber', 'products.vue');
+      addPage('product-category-page', '/product-category/:categorySlug', 'product-category/[slug].vue');
+      addPage('product-category-page-pager', '/product-category/:categorySlug/page/:pageNumber', 'product-category/[slug].vue');
+      addPage('order-received', '/checkout/order-received/:orderId', 'order-summary.vue');
+      addPage('order-summary', '/order-summary/:orderId', 'order-summary.vue');
     },
   },
 
   nitro: {
     routeRules: {
+      '/': { prerender: true },
+      '/products/**': { swr: 3600 },
       '/checkout/order-received/**': { ssr: false },
       '/order-summary/**': { ssr: false },
     },

@@ -4,36 +4,35 @@
 
 ## Introduction
 
-The goal of WooNuxt is to provide a modern, fast, and SEO friendly front-end for WooCommerce. It's built on top of Nuxt 3 and uses the WPGraphQL API to retrieve all the data it needs. It's also fully customizable and can be extended with your own components and modules. You can see a live demo of WooNuxt by clicking the button below.
+The goal of WooNuxt is to provide a modern, fast, and SEO-friendly front-end for WooCommerce. It's built on Nuxt 3 and uses the WPGraphQL API to retrieve all the data it needs. It's also fully customizable and can be extended with your custom components and modules. You can see a live demo of WooNuxt by clicking the button below.
 
-👉 [**Live Demo of WooNuxt**](https://v3.woonuxt.com/) ⚡️
-
-&nbsp;
+| Demo            | URL                            |
+| --------------- | ------------------------------ |
+| Netlify Demo    | https://v3.woonuxt.com/        |
+| Vercel Demo     | https://woonuxt-v3.vercel.app/ |
+| Customized Demo | https://myshop.woonuxt.com/    |
 
 ## Troubleshooting
 
-You can find some common errors and how to fix them in [here](https://woonuxt.com/faq#some-common-errors-to-troubleshoot)
-
-&nbsp;
+You can find some common errors and how to fix them [here](https://woonuxt.com/faq#some-common-errors-to-troubleshoot)
 
 ## Get Started
 
 - Download the latest WooNuxt Setting [(woonuxt-settings.zip)](<(https://github.com/scottyzen/woonuxt-settings/releases)>).
 - Install and activate the plugin on your WordPress site. This will install all the required plugins for WooNuxt, add some useful fields to the WPGraphQL schema, and automatically retrieve the WooCommerce payment gateway settings for [Stripe](https://wordpress.org/plugins/woocommerce-gateway-stripe/) and [PayPal](https://woo.com/document/paypal-standard/).
 - Once the plugin is activated you are ready to deploy WooNuxt on whatever hosting you like or click one of the fast deploy buttons below.
-- Once the plugin is activated the only required environment variable is `GQL_HOST`. Checkout the `.env.example` file for more details.
+- Once the plugin is activated the only required environment variable is `GQL_HOST`. Check out the `.env.example` file for more details.
 
 [![button](https://user-images.githubusercontent.com/5116925/218880214-a16287a7-fd8c-4299-9e65-0871136f0771.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/scottyzen/woonuxt) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fscottyzen%2FWooNuxt3&repository-name=WooNuxt&env=GQL_HOST,NUXT_IMAGE_DOMAINS)
 
-&nbsp;
-
 ## How to customize & extend WooNuxt 🎨
 
-WooNuxt now uses the Nuxt layers feature to make it easy to customize any part of WooNuxt. Just like you would with a WordPress theme with it's child theme.
+WooNuxt now uses the Nuxt layers feature to make it easy to customize any part of WooNuxt just like you would with a WordPress theme with its child theme.
 
 Example: I have created a pages directory and added a `contact.vue` file in the pages directory. This will override the default contact page that comes with WooNuxt. You can do this with any page or component. So think of the `woonuxt_base` folder as the parent theme and the root folder as the child theme.
 
-&nbsp;
+Here is a [branch](https://github.com/scottyzen/woonuxt/tree/myshop) with an example of some basic customizations:
+And here is the live demo of the customized WooNuxt site: [My Shop](https://myshop.woonuxt.com/).
 
 ### Progress
 
@@ -92,10 +91,11 @@ Example: I have created a pages directory and added a `contact.vue` file in the 
 
 | Plugin/Software | Version |
 | --------------- | ------- |
-| WordPress       | 6.4.3   |
-| WooCommerce     | 8.6.1   |
-| WPGraphQL       | 1.21.0  |
-| WooGraphQL      | 0.19.0  |
+| WordPress       | 6.5.4   |
+| WooCommerce     | 8.9.2   |
+| WPGraphQL       | 1.27.0  |
+| WooGraphQL      | 0.20.0  |
+| WPGraphQL CORS  | 2.1     |
 | Node            | 20.10.0 |
 | PHP             | 8.2     |
 
@@ -109,6 +109,13 @@ Example: I have created a pages directory and added a `contact.vue` file in the 
 | French 🇫🇷     | fr   |
 | Italian 🇮🇹    | it   |
 | Portuguese 🇵🇹 | pt   |
+
+### Local SSL Setup
+
+- Install [mkcert](https://github.com/FiloSottile/mkcert) on your machine.
+- Run `mkcert localhost` to generate a certificate for localhost. You should now have a `localhost.pem` and `localhost-key.pem` file in your current directory. See the image below for an example.
+- Then run `mkcert -install` to install the certificate authority.
+- Finally, run `npm run dev:ssl` to start the dev server with SSL.
 
 #### Credits
 
