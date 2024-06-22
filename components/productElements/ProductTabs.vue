@@ -11,7 +11,7 @@ const sizeGuideData = ref(null);
 
 const fetchSizeGuideData = async () => {
   try {
-    const response = await fetch(`https://api.printful.com/products/${product.id}/sizes`);
+    const response = await fetch(`https://api.printful.com/products/71/sizes`);
     const data = await response.json();
     console.log("data", data);
     sizeGuideData.value = data.result; // Adjust according to the structure of the returned data
