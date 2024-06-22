@@ -7,9 +7,9 @@ export default defineNuxtConfig({
   extends: ['./woonuxt_base'],
   components: [{ path: './components', pathPrefix: false }],
   modules: ['@nuxt/content', '@nuxtjs/sitemap'],
+
   app: {
     head: {
-      titleTemplate: `%s | Come with Reverse`,
       link: [
         { rel: 'icon', href: '/favicon.png', type: 'image/png' },
       ],
