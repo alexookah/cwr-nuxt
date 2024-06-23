@@ -34,8 +34,6 @@ export const enhanceSizeGuideData = async (advancedSizeChartValue: any) => {
         return acc;
     }, {});
 
-    console.log("imageUrlMap", imageUrlMap)
-
     // Update sizeGuideData with image URLs
     if (sizeGuideData.modelMeasurements && sizeGuideData.modelMeasurements.imageId) {
         sizeGuideData.modelMeasurements.imageUrl = imageUrlMap[sizeGuideData.modelMeasurements.imageId] || null;

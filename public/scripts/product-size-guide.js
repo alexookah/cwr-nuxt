@@ -39,7 +39,6 @@ var Printful_Product_Size_Guide;
             if (window.pfGlobal && window.pfGlobal.sg_unit_translations) {
                 this.translatedUnitNames = JSON.parse(window.pfGlobal.sg_unit_translations);
             }
-            console.log("HERE");
             document.body.appendChild(this.createModal());
         },
 

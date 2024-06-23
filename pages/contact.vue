@@ -101,7 +101,6 @@ const initialFormState = {
 const contactForm = ref({ ...initialFormState });
 
 async function sendContactMessage() {
-  console.log('sending');
   sending.value = true;
   try {
     const { data } = await useAsyncGql('SendEmail', {
