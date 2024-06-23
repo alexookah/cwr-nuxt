@@ -6,7 +6,7 @@ const { arraysEqual, formatArray, checkForVariationTypeOfAny } = useHelpers();
 const { addToCart, isUpdatingCart } = useCart();
 const slug = route.params.slug as string;
 
-const { data } = (await useAsyncGql('getProduct', { slug })) as { data: { value: { product: Product } } };
+const { data } = (await useAsyncGql('getProductWithMetaData', { slug })) as { data: { value: { product: Product } } };
 const product = ref<Product>(data?.value?.product);
 
 const quantity = ref<number>(1);
@@ -68,6 +68,24 @@ const disabledAddToCart = computed(() => {
   if (isSimpleProduct.value) return !type.value || stockStatus.value === StockStatusEnum.OUT_OF_STOCK || isUpdatingCart.value;
   return !type.value || stockStatus.value === StockStatusEnum.OUT_OF_STOCK || !activeVariation.value || isUpdatingCart.value;
 });
+
+const advancedSizeChart = computed(() => {
+  const item = product.value.metaData.find((item) => item.key === 'pf_advanced_size_chart');
+  return item ? item.value : null;
+});
+
+onMounted(async () => {
+  if (!advancedSizeChart) return;
+  
+  const newValue = await enhanceSizeGuideData(advancedSizeChart.value);
+  window.pfGlobal = {};
+  window.pfGlobal.sg_data_raw = newValue || advancedSizeChart.value;
+  window.pfGlobal.sg_primary_unit = 'centimeter';
+});
+
+const openModal = () => {
+  Printful_Product_Size_Guide.onSizeGuideClick()
+};
 </script>
 
 <template>
@@ -109,6 +127,9 @@ const disabledAddToCart = computed(() => {
         </div>
 
         <div class="mb-8 font-light prose" v-html="product.shortDescription || product.description" />
+
+        <button class="text-white font-bold py-2 px-4 rounded mb-4 bg-gray-600" v-if="advancedSizeChart" @click="openModal">Size Guide</button>
+        <LoadProductSizeGuide />
 
         <hr />
 

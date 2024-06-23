@@ -1,0 +1,10 @@
+query getAttachedImageSrcs($attachmentIds: [ID!]!) {
+  mediaItems(where: { in: $attachmentIds }) {
+    edges {
+      node {
+        sourceUrl
+        databaseId
+      }
+    }
+  }
+}
