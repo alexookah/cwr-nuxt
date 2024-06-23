@@ -6,7 +6,7 @@ const { arraysEqual, formatArray, checkForVariationTypeOfAny } = useHelpers();
 const { addToCart, isUpdatingCart } = useCart();
 const slug = route.params.slug as string;
 
-const { data } = (await useAsyncGql('getProductWithMetaData', { slug })) as { data: { value: { product: Product } } };
+const { data } = (await useAsyncGql('getProduct', { slug })) as { data: { value: { product: Product } } };
 const product = ref<Product>(data?.value?.product);
 
 const quantity = ref<number>(1);
