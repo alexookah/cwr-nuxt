@@ -69,23 +69,6 @@ const disabledAddToCart = computed(() => {
   return !type.value || stockStatus.value === StockStatusEnum.OUT_OF_STOCK || !activeVariation.value || isUpdatingCart.value;
 });
 
-const advancedSizeChart = computed(() => {
-  const item = product.value.metaData.find((item) => item.key === 'pf_advanced_size_chart');
-  return item ? item.value : null;
-});
-
-onMounted(async () => {
-  if (!advancedSizeChart) return;
-  
-  const newValue = await enhanceSizeGuideData(advancedSizeChart.value);
-  window.pfGlobal = {};
-  window.pfGlobal.sg_data_raw = newValue || advancedSizeChart.value;
-  window.pfGlobal.sg_primary_unit = 'centimeter';
-});
-
-const openModal = () => {
-  Printful_Product_Size_Guide.onSizeGuideClick()
-};
 </script>
 
 <template>
@@ -128,8 +111,7 @@ const openModal = () => {
 
         <div class="mb-8 font-light prose" v-html="product.shortDescription || product.description" />
 
-        <button class="text-white font-bold py-2 px-4 rounded mb-4 bg-gray-600" v-if="advancedSizeChart" @click="openModal">Size Guide</button>
-        <LoadProductSizeGuide />
+        <LoadProductSizeGuide :product="product" />
 
         <hr />
 
