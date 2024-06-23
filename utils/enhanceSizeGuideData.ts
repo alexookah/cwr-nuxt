@@ -1,13 +1,13 @@
 
 
-const fetchImageSrcs = async (attachmentIds) => {
+const fetchImageSrcs = async (attachmentIds: any[]) => {
     const { data } = await useAsyncGql('getAttachedImageSrcs', { attachmentIds });
 
     const images = data?.value?.mediaItems?.edges?.map(edge => ({
         id: edge.node.databaseId,
-        sourceUrl: edge.node.sourceUrl
+        sourceUrl: edge.node.sourceUrl || ""
     })) ?? []
-    
+
     return images;
 };
 
@@ -29,7 +29,7 @@ export const enhanceSizeGuideData = async (advancedSizeChartValue: any) => {
     const images = await fetchImageSrcs(uniqueImageIds);
 
     // Map URLs to IDs
-    const imageUrlMap = images.reduce((acc, image) => {
+    const imageUrlMap: { [key: number]: string } = images.reduce<{ [key: number]: string }>((acc, image) => {
         acc[image.id] = image.sourceUrl;
         return acc;
     }, {});
