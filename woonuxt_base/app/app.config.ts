@@ -8,6 +8,7 @@ export default defineAppConfig({
   baseUrl: 'https://comewithreverse.com',
   siteImage: 'https://comewithreverse.com/logo-black.svg',
   storeSettings: {
-    autoOpenCart: true,
+    autoOpenCart: false,
+    showReviews: false,
   },
 });
