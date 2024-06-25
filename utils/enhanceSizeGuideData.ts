@@ -3,9 +3,9 @@
 const fetchImageSrcs = async (attachmentIds: any[]) => {
     const { data } = await useAsyncGql('getAttachedImageSrcs', { attachmentIds });
 
-    const images = data?.value?.mediaItems?.edges?.map(edge => ({
-        id: edge.node.databaseId,
-        sourceUrl: edge.node.sourceUrl || ""
+    const images = data?.value?.mediaItems?.nodes?.map(node => ({
+        id: node.databaseId,
+        sourceUrl: node.sourceUrl || ""
     })) ?? []
 
     return images;
