@@ -111,6 +111,8 @@ const disabledAddToCart = computed(() => {
 
         <div class="mb-8 font-light prose" v-html="product.shortDescription || product.description" />
 
+        <LoadProductSizeGuide :product="product" />
+
         <hr />
 
         <form @submit.prevent="addToCart(selectProductInput)">
