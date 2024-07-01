@@ -17,6 +17,7 @@ export default defineAppConfig({
     showSKU: false,
     showRelatedProducts: false,
     showProductCategoriesOnSingleProduct: false,
+    showBreadcrumbOnSingleProduct: false,
     saleBadge: 'percent', // 'percent', 'onSale' or 'hidden'
   },
 });
