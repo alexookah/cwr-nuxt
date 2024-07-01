@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.color-button.color-black { background-color: #0c0c0c; }
+.color-button.color-black-heather { background-color: #0b0b0b; }
+.color-button.color-oxblood-black { background-color: #2c1013; }
+.color-button.color-navy { background-color: #212642; }
+.color-button.color-cardinal { background-color: #890c1e; }
+.color-button.color-brown { background-color: #322622; }
+.color-button.color-heather-midnight-navy { background-color: #302d4b; }
+.color-button.color-heather-forest { background-color: #28332e; }
+.color-button.color-maroon { background-color: #721d37; }
+.color-button.color-red { background-color: #d0071e; }
+.color-button.color-forest { background-color: #223e25; }
+.color-button.color-true-royal { background-color: #01408d; }
+.color-button.color-dark-grey-heather { background-color: #3E3C3D; }
+.color-button.color-berry { background-color: #c02773; }
+.color-button.color-asphalt { background-color: #52514f; }
+.color-button.color-army { background-color: #5f5849; }
+.color-button.color-olive { background-color: #5b642f; }
+.color-button.color-heather-raspberry { background-color: #d23d62; }
+.color-button.color-autumn { background-color: #c85313; }
+.color-button.color-heather-deep-teal { background-color: #447085; }
+.color-button.color-heather-true-royal { background-color: #536ba7; }
+.color-button.color-aqua { background-color: #008db5; }
+.color-button.color-toast { background-color: #be672d; }
+.color-button.color-kelly { background-color: #1a9462; }
+.color-button.color-mauve { background-color: #bf6e6e; }
+.color-button.color-leaf { background-color: #5c9346; }
+.color-button.color-steel-blue { background-color: #668ea7; }
+.color-button.color-pebble { background-color: #9a8479; }
+.color-button.color-orange { background-color: #ff6f32; }
+.color-button.color-heather-orange { background-color: #ff6f4e; }
+.color-button.color-burnt-orange { background-color: #ed8043; }
+.color-button.color-heather-orchid { background-color: #c2878e; }
+.color-button.color-gold { background-color: #ff9e00; }
+.color-button.color-mustard { background-color: #eda027; }
+.color-button.color-heather-prism-lilac { background-color: #deafcd; }
+.color-button.color-tan { background-color: #ddb792; }
+.color-button.color-heather-prism-dusty-blue { background-color: #a5c8bc; }
+.color-button.color-lilac { background-color: #efbbe3; }
+.color-button.color-heather-prism-mint { background-color: #aad5b9; }
+.color-button.color-heather-prism-peach { background-color: #f3c2b2; }
+.color-button.color-pink { background-color: #fdbfc7; }
+.color-button.color-athletic-heather { background-color: #cececc; }
+.color-button.color-light-blue { background-color: #cfd5e1; }
+.color-button.color-ocean-blue { background-color: #a9dff6; }
+.color-button.color-soft-cream { background-color: #e7d4c0; }
+.color-button.color-yellow { background-color: #ffd667; }
+.color-button.color-heather-dust { background-color: #e5d9c9; }
+.color-button.color-heather-prism-ice-blue { background-color: #c3e2e3; }
+.color-button.color-heather-mint { background-color: #b2ebcf; }
+.color-button.color-silver { background-color: #e3e3dd; }
+.color-button.color-ash { background-color: #f0f1ea; }
+.color-button.color-citron { background-color: #f7fee5; }
+.color-button.color-white { background-color: #ffffff; }
