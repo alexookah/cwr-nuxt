@@ -9,6 +9,7 @@ query getOrder($id: ID!) {
     total
     subtotal
     discountTotal
+    rawDiscountTotal: discountTotal(format: RAW)
     totalTax
     shippingTotal
     paymentMethodTitle
@@ -17,11 +18,13 @@ query getOrder($id: ID!) {
     subtotal
     customer {
       email
+      ...DownloadableItems
     }
     lineItems {
       nodes {
         quantity
         total
+        id
         product {
           node {
             name

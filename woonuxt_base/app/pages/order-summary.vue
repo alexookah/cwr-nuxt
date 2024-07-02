@@ -4,6 +4,7 @@ import { OrderStatusEnum } from '#woo';
 const { query, params, name } = useRoute();
 const { customer } = useAuth();
 const { formatDate, formatPrice } = useHelpers();
+const { t } = useI18n();
 
 const order = ref<Order>({});
 const fetchDelay = ref<boolean>(query.fetch_delay === 'true');
@@ -12,10 +13,11 @@ const isLoaded = ref<boolean>(false);
 const errorMessage = ref('');
 
 const isGuest = computed(() => !customer.value?.databaseId);
-const isSummaryPage = computed(() => name === 'order-summary');
-const isCheckoutPage = computed(() => name === 'order-received');
-const showRefreshButton = computed(() => order.value.status !== OrderStatusEnum.COMPLETED);
-const hasDiscount = computed<boolean>(() => !!parseFloat(order.value.discountTotal?.replace(/[^0-9.]/g, '')));
+const isSummaryPage = computed<boolean>(() => name === 'order-summary');
+const isCheckoutPage = computed<boolean>(() => name === 'order-received');
+const orderIsNotCompleted = computed<boolean>(() => order.value?.status !== OrderStatusEnum.COMPLETED);
+const hasDiscount = computed<boolean>(() => !!parseFloat(order.value?.rawDiscountTotal || '0'));
+const downloadableItems = computed(() => order.value?.customer?.downloadableItems?.nodes || []);
 
 onBeforeMount(() => {
   /**
@@ -33,7 +35,7 @@ onMounted(async () => {
    * The length of the delay might need to be adjusted depending on your server.
    */
 
-  if (isCheckoutPage.value && fetchDelay.value && order.value.status !== !OrderStatusEnum.COMPLETED) {
+  if (isCheckoutPage.value && fetchDelay.value && orderIsNotCompleted.value) {
     setTimeout(() => {
       getOrder();
     }, delayLength);
@@ -54,6 +56,12 @@ const refreshOrder = async () => {
   isLoaded.value = false;
   await getOrder();
 };
+
+useSeoMeta({
+  title() {
+    return isSummaryPage.value ? t('messages.shop.orderSummary') : t('messages.shop.orderReceived');
+  },
+});
 </script>
 
 <template>
@@ -73,7 +81,7 @@ const refreshOrder = async () => {
           <div class="flex w-full items-center justify-between mb-2">
             <h1 class="text-xl font-semibold">{{ $t('messages.shop.orderReceived') }}</h1>
             <button
-              v-if="showRefreshButton"
+              v-if="orderIsNotCompleted"
               type="button"
               class="border rounded-md p-2 inline-flex items-center justify-center bg-white"
               title="Refresh order"
@@ -98,7 +106,7 @@ const refreshOrder = async () => {
           </div>
           <div>
             <div class="text-xs text-gray-400 uppercase mb-2">{{ $t('messages.general.status') }}</div>
-            <OrderStatusLabel :status="order.status" />
+            <OrderStatusLabel v-if="order.status" :status="order.status" />
           </div>
           <div>
             <div class="text-xs text-gray-400 uppercase mb-2">{{ $t('messages.general.paymentMethod') }}</div>
@@ -109,7 +117,7 @@ const refreshOrder = async () => {
         <hr class="my-8" />
 
         <div class="grid gap-2">
-          <div v-if="order.lineItems" v-for="item in order.lineItems.nodes" :key="item.product?.databaseId!" class="flex items-center justify-between gap-8">
+          <div v-if="order.lineItems" v-for="item in order.lineItems.nodes" :key="item.id" class="flex items-center justify-between gap-8">
             <img
               v-if="item.product?.node"
               class="w-16 h-16 rounded-xl"
@@ -128,6 +136,11 @@ const refreshOrder = async () => {
         </div>
 
         <hr class="my-8" />
+
+        <div v-if="downloadableItems.length && !orderIsNotCompleted">
+          <DownloadableItems :downloadableItems="downloadableItems" />
+          <hr class="my-8" />
+        </div>
 
         <div>
           <div class="flex justify-between">
