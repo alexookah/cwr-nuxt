@@ -41,5 +41,8 @@ export default defineNuxtConfig({
       interval: 1000,
       failOnError: false,
     },
+    routeRules: {
+      '/wc-auth/v1/authorize': { proxy: 'https://shop.comewithreverse.com/wc-auth/v1/authorize' },
+    },
   },
 });
