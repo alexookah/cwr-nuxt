@@ -13,6 +13,7 @@ const fetchImageSrcs = async (attachmentIds: any[]) => {
 
 // Vue Helper Function
 export const enhanceSizeGuideData = async (advancedSizeChartValue: any) => {
+    if (!advancedSizeChartValue) return null;
     const sizeGuideData = JSON.parse(advancedSizeChartValue);
 
     const imageIds: number[] = [];
