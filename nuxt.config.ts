@@ -5,6 +5,7 @@ export default defineNuxtConfig({
 
   // Get all the pages, components, composables and plugins from the parent theme
   extends: ['./woonuxt_base'],
+
   components: [{ path: './components', pathPrefix: false }],
   modules: ['@nuxt/content', '@nuxtjs/sitemap'],
 
@@ -42,7 +43,6 @@ export default defineNuxtConfig({
       failOnError: false,
     },
   },
-  routeRules: {
-    '/wc-auth/**': { proxy: 'https://shop.comewithreverse.com/wc-auth/**' },
-  },
+
+  compatibilityDate: '2024-07-09',
 });
