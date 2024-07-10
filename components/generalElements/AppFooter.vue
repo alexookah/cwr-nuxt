@@ -7,16 +7,16 @@ const currentYear = new Date().getFullYear();
     <div class="container flex flex-wrap justify-between gap-12 mt-6 md:gap-24">
       <div class="w-3/7 lg:w-auto">
         <div class="text-sm">
-          <NuxtLink to="/products" class="py-1.5 block">Shop</NuxtLink>
           <NuxtLink to="/shipping-and-returns" class="py-1.5 block">Shipping & Returns</NuxtLink>
+          <NuxtLink to="/privacy-policy" class="py-1.5 block">Privacy Policy</NuxtLink>
+          <NuxtLink href="/terms-and-conditions" class="py-1.5 block">Terms & Conditions</NuxtLink>
           <NuxtLink to="/contact" class="py-1.5 block">Contact Us</NuxtLink>
-          <!-- <a href="/" class="py-1.5 block">Privacy Policy</a>
-          <a href="/" class="py-1.5 block">Terms & Conditions</a> -->
         </div>
       </div>
       <div class="w-3/7 lg:w-auto">
         <!-- <div class="mb-1 font-semibold">{{ $t('messages.account.myAccount') }}</div> -->
         <div class="text-sm">
+          <NuxtLink to="/products" class="py-1.5 block">Shop</NuxtLink>
           <NuxtLink to="/my-account" class="py-1.5 block">{{ $t('messages.account.myAccount') }}</NuxtLink>
           <NuxtLink to="/my-account/?tab=orders" class="py-1.5 block">{{ $t('messages.shop.orderHistory') }}</NuxtLink>
           <NuxtLink to="/wishlist" class="py-1.5 block">{{ $t('messages.shop.wishlist') }}</NuxtLink>
