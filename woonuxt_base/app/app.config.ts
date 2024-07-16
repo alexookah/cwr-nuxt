@@ -10,7 +10,6 @@ export default defineAppConfig({
   baseUrl: 'https://comewithreverse.com',
   siteImage: 'https://comewithreverse.com/logo-black.svg',
   storeSettings: {
-<<<<<<< HEAD
     autoOpenCart: true,
     showReviews: false,
     showFilters: false,
@@ -19,17 +18,7 @@ export default defineAppConfig({
     showRelatedProducts: false,
     showProductCategoriesOnSingleProduct: false,
     showBreadcrumbOnSingleProduct: false,
-=======
-    autoOpenCart: false,
-    showReviews: true,
-    showFilters: true,
-    showOrderByDropdown: true,
-    showSKU: true,
-    showRelatedProducts: true,
-    showProductCategoriesOnSingleProduct: true,
-    showBreadcrumbOnSingleProduct: true,
-    showMoveToWishlist: true,
->>>>>>> main
+    showMoveToWishlist: false,
     saleBadge: 'percent', // 'percent', 'onSale' or 'hidden'
   },
 });
