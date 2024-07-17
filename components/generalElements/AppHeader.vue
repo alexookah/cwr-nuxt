@@ -6,10 +6,12 @@
         <Logo />
       </div>
       <MainMenu class="items-center hidden gap-10 text-sm text-gray-500 lg:flex lg:px-4" />
+      <NuxtLink to="/products" class="lg:hidden flex items-center justify-center bg-gray-200 text-gray-600 px-4 py-2 rounded-full ml-4 hover:bg-gray-100">
+        <Icon name="ion:bag-outline" size="21" class="mr-2" />
+        <span>Shop</span>
+      </NuxtLink>
+
       <div class="flex gap-6 justify-end items-center">
-        <NuxtLink to="/products" class="lg:hidden" title="Shop">
-          <Icon name="ion:bag-outline" size="21" class="mr-1 md:mr-0 mt-1" />
-        </NuxtLink>
         <NuxtLink to="/my-account" class="sm:hidden">
           <Icon name="ion:person-outline" size="21" class="mr-1 md:mr-0 mt-1" />
         </NuxtLink>
