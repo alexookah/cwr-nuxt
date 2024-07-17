@@ -8,8 +8,8 @@
       <MainMenu class="items-center hidden gap-10 text-sm text-gray-500 lg:flex lg:px-4" />
       <div class="flex gap-6 justify-end items-center">
         <NuxtLink to="/products" class="lg:hidden" title="Shop">
-        <Icon name="ion:bag-outline" size="21" class="mr-1 md:mr-0 mt-1"/>
-      </NuxtLink>
+          <Icon name="ion:bag-outline" size="21" class="mr-1 md:mr-0 mt-1" />
+        </NuxtLink>
         <NuxtLink to="/my-account" class="sm:hidden">
           <Icon name="ion:person-outline" size="21" class="mr-1 md:mr-0 mt-1" />
         </NuxtLink>
