@@ -9,7 +9,7 @@
 
 
       <div class="flex gap-8 justify-end items-center">
-        <NuxtLink to="/products" class="lg:hidden flex items-center justify-center bg-gray-50 text-gray-600 px-4 py-2 rounded-full ml-4 hover:bg-gray-100">
+        <NuxtLink to="/products" class="lg:hidden flex items-center justify-center bg-gray-100 text-gray-600 px-4 py-2 rounded-full ml-4 hover:bg-gray-200">
         <Icon name="ion:bag-outline" size="21" class="mr-2" />
         <span>Shop</span>
       </NuxtLink>
