@@ -4,8 +4,9 @@ const currentYear = new Date().getFullYear();
 
 <template>
   <footer class="bg-white order-last">
-    <div class="container flex flex-wrap justify-between gap-12 mt-6 md:gap-24">
-      <div class="w-3/7 lg:w-auto">
+    <div class="max-w-4xl mx-auto p-5" >
+    <div class="container flex flex-wrap justify-between gap-12 mt-6 md:gap-24  md:max-w-[50%]">
+      <div class="w-3/7">
         <div class="text-sm">
           <NuxtLink to="/shipping-and-returns" class="py-1.5 block">Shipping & Returns</NuxtLink>
           <NuxtLink to="/privacy-policy" class="py-1.5 block">Privacy Policy</NuxtLink>
@@ -13,7 +14,7 @@ const currentYear = new Date().getFullYear();
           <NuxtLink to="/contact" class="py-1.5 block">Contact Us</NuxtLink>
         </div>
       </div>
-      <div class="w-3/7 lg:w-auto">
+      <div class="w-3/7">
         <!-- <div class="mb-1 font-semibold">{{ $t('messages.account.myAccount') }}</div> -->
         <div class="text-sm">
           <NuxtLink to="/products" class="py-1.5 block">Shop</NuxtLink>
@@ -24,6 +25,7 @@ const currentYear = new Date().getFullYear();
         </div>
       </div>
     </div>
+  </div>
 
     <nav>
       <Socials class="pb-3 pt-6" />
