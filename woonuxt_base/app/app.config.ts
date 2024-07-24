@@ -19,6 +19,7 @@ export default defineAppConfig({
     showProductCategoriesOnSingleProduct: false,
     showBreadcrumbOnSingleProduct: false,
     showMoveToWishlist: false,
+    hideBillingAddressForVirtualProducts: true,
     saleBadge: 'percent', // 'percent', 'onSale' or 'hidden'
   },
 });
