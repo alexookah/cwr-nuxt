@@ -1,0 +1,165 @@
+{
+  "id": "come-with-reverse",
+  "name": "Come with Reverse – EP",
+  "slug": "come-with-reverse",
+  "releaseDate": "2012-02-07",
+  "published": true,
+  "image": {
+    "src": "/albums/come-with-reverse.jpg",
+    "alt": "Come with Reverse - Come with Reverse – EP"
+  },
+  "video": null,
+  "notes": "",
+  "songs": [
+    {
+      "name": "Vanity",
+      "links": [
+        {
+          "source": "lyrics",
+          "link": "https://genius.com/Come-with-reverse-vanity-lyrics"
+        },
+        {
+          "source": "bandcamp",
+          "link": "https://comewithreverse.bandcamp.com/track/vanity"
+        },
+        {
+          "source": "spotify",
+          "link": "https://open.spotify.com/track/1UUdmdIPrfSuDILj4n0oEV"
+        },
+        {
+          "source": "apple",
+          "link": "https://music.apple.com/us/album/vanity/1436431768?i=1436431769"
+        }
+      ],
+      "audio": {
+        "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fcome-with-reverse%2Fsongs.0.audio.mp3?alt=media&token=f757daa0-fbaa-4e7e-a129-8d160604233b",
+        "title": "01-Vanity.sample.mp3"
+      }
+    },
+    {
+      "name": "Inner Dimise",
+      "links": [
+        {
+          "source": "lyrics",
+          "link": "https://genius.com/Come-with-reverse-inner-demise-lyrics"
+        },
+        {
+          "source": "bandcamp",
+          "link": "https://comewithreverse.bandcamp.com/track/inner-demise"
+        },
+        {
+          "source": "spotify",
+          "link": "https://open.spotify.com/track/1lMieYBDF82SRtlFT7eOWY"
+        },
+        {
+          "source": "apple",
+          "link": "https://music.apple.com/us/album/inner-demise/1436431768?i=1436431770"
+        }
+      ],
+      "audio": {
+        "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fcome-with-reverse%2Fsongs.1.audio.mp3?alt=media&token=a58ae856-50eb-4100-8500-b1535a1238f0",
+        "title": "02-Inner-Dimise.sample.mp3"
+      }
+    },
+    {
+      "name": "Mandolism",
+      "links": [
+        {
+          "source": "lyrics",
+          "link": "https://genius.com/Come-with-reverse-mandolism-lyrics"
+        },
+        {
+          "source": "bandcamp",
+          "link": "https://comewithreverse.bandcamp.com/track/mandolism"
+        },
+        {
+          "source": "spotify",
+          "link": "https://open.spotify.com/track/2v4fs1ICo6rkP1LszOMW34"
+        },
+        {
+          "source": "apple",
+          "link": "https://music.apple.com/us/album/mandolism/1436431768?i=1436431771"
+        }
+      ],
+      "audio": {
+        "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fcome-with-reverse%2Fsongs.2.audio.mp3?alt=media&token=aa8d1a3e-2fea-4f66-9a55-76dbcdd3677d",
+        "title": "03-Mandolism.sample.mp3"
+      }
+    },
+    {
+      "name": "Evolution of Broken Minds",
+      "links": [
+        {
+          "source": "lyrics",
+          "link": "https://genius.com/Come-with-reverse-evolution-of-broken-minds-lyrics"
+        },
+        {
+          "source": "bandcamp",
+          "link": "https://comewithreverse.bandcamp.com/track/evolution-of-broken-minds"
+        },
+        {
+          "source": "spotify",
+          "link": "https://open.spotify.com/track/75X2j4WoxGrPk578nYCntD"
+        },
+        {
+          "source": "apple",
+          "link": "https://music.apple.com/us/album/evolution-of-broken-minds/1436431768?i=1436431772"
+        }
+      ],
+      "audio": {
+        "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fcome-with-reverse%2Fsongs.3.audio.mp3?alt=media&token=0785fd6b-9d87-4aee-b4b9-10075024578d",
+        "title": "04-Evolution-of-Broken-Minds.sample.mp3"
+      }
+    },
+    {
+      "name": "Retour an Dich",
+      "links": [
+        {
+          "source": "lyrics",
+          "link": "https://genius.com/Come-with-reverse-retour-an-dich-lyrics"
+        },
+        {
+          "source": "bandcamp",
+          "link": "https://comewithreverse.bandcamp.com/track/retour-an-dich"
+        },
+        {
+          "source": "spotify",
+          "link": "https://open.spotify.com/track/0QKlhXP97FkskB9lZq6wh6"
+        },
+        {
+          "source": "apple",
+          "link": "https://music.apple.com/us/album/retour-an-dich/1436431768?i=1436431773"
+        }
+      ],
+      "audio": {
+        "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fcome-with-reverse%2Fsongs.4.audio.mp3?alt=media&token=4f89ffe1-5a6c-4e39-9dcd-db1272f310fa",
+        "title": "05-Retour-an-Dich.sample.mp3"
+      }
+    },
+    {
+      "name": "Come with Reverse",
+      "links": [
+        {
+          "source": "lyrics",
+          "link": "https://genius.com/Come-with-reverse-come-with-reverse-lyrics"
+        },
+        {
+          "source": "bandcamp",
+          "link": "https://comewithreverse.bandcamp.com/track/come-with-reverse"
+        },
+        {
+          "source": "spotify",
+          "link": "https://open.spotify.com/track/2LSRCrtbtDyz86oks1GGOK"
+        },
+        {
+          "source": "apple",
+          "link": "https://music.apple.com/us/album/come-with-reverse/1436431768?i=1436431774"
+        }
+      ],
+      "audio": {
+        "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fcome-with-reverse%2Fsongs.5.audio.mp3?alt=media&token=23d53d94-7493-4ddf-810e-275e6aad6f9a",
+        "title": "06-Come-with-Reverse.sample.mp3"
+      }
+    }
+  ]
+}

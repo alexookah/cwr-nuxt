@@ -1,0 +1,36 @@
+{
+  "id": "my-way",
+  "name": "My Way – Single",
+  "slug": "my-way",
+  "releaseDate": "2016-01-14",
+  "published": true,
+  "image": {
+    "src": "/albums/my-way.jpg",
+    "alt": "Come with Reverse - My Way – Single"
+  },
+  "video": null,
+  "notes": "Frank Sinatra’s Cover\nArtwork by David Paolinetti",
+  "songs": [
+    {
+      "name": "My Way",
+      "links": [
+        {
+          "source": "youtube",
+          "link": "https://www.youtube.com/watch?v=wiD-cK3JV2Y"
+        },
+        {
+          "source": "spotify",
+          "link": "https://open.spotify.com/album/7zLGWls6V0MfJheqSwnVaS"
+        },
+        {
+          "source": "apple",
+          "link": "https://music.apple.com/us/album/my-way-single/1559339756"
+        }
+      ],
+      "audio": {
+        "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fmy-way%2Fsongs.0.audio.mp3?alt=media&token=32f536f7-4b80-478c-b598-177896a5b3ac",
+        "title": "my-way.sample.mp3"
+      }
+    }
+  ]
+}

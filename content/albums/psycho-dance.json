@@ -1,0 +1,36 @@
+{
+  "id": "psycho-dance",
+  "name": "Psycho Dance – Single",
+  "slug": "psycho-dance",
+  "releaseDate": "2021-11-22",
+  "published": true,
+  "image": {
+    "src": "/albums/psycho-dance.jpg",
+    "alt": "Come with Reverse - Psycho Dance – Single"
+  },
+  "video": null,
+  "notes": "Artwork by Bob Architektonidis",
+  "songs": [
+    {
+      "name": "Psycho Dance",
+      "links": [
+        {
+          "source": "bandcamp",
+          "link": "https://comewithreverse.bandcamp.com/track/psycho-dance"
+        },
+        {
+          "source": "spotify",
+          "link": "https://open.spotify.com/album/6SgGWDAAHdO5rEUyeu2sJR"
+        },
+        {
+          "source": "apple",
+          "link": "https://music.apple.com/us/album/psycho-dance-single/1599002566"
+        }
+      ],
+      "audio": {
+        "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fpsycho-dance%2Fsongs.0.audio.mp3?alt=media&token=dd749c1b-5584-4ee9-9928-0662526c3791",
+        "title": "psycho_dance.mp3"
+      }
+    }
+  ]
+}

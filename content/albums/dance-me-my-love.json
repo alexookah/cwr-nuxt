@@ -1,0 +1,36 @@
+{
+  "id": "dance-me-my-love",
+  "name": "Dance Me My Love – Single",
+  "slug": "dance-me-my-love",
+  "releaseDate": "2022-02-14",
+  "published": true,
+  "image": {
+    "src": "/albums/dance-me-my-love.jpg",
+    "alt": "Come with Reverse - Dance Me My Love – Single"
+  },
+  "video": null,
+  "notes": "<p>Artwork by Alex Simopoulos</p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://behance.net/alexisimopoulos\">behance.net/alexisimopoulos</a></p>",
+  "songs": [
+    {
+      "name": "Dance Me My Love",
+      "links": [
+        {
+          "source": "bandcamp",
+          "link": "https://comewithreverse.bandcamp.com/track/dance-me-my-love"
+        },
+        {
+          "source": "spotify",
+          "link": "https://open.spotify.com/album/2wZbs3vxXP4LE43HALPpQW"
+        },
+        {
+          "source": "apple",
+          "link": "https://music.apple.com/us/album/dance-me-my-love-single/1610228375"
+        }
+      ],
+      "audio": {
+        "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fdance-me-my-love%2Fsongs.0.audio.mp3?alt=media&token=fb614298-34b1-4eed-b57e-228900f07c6a",
+        "title": "dance_me_my_love.mp3"
+      }
+    }
+  ]
+}

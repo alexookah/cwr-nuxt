@@ -1,0 +1,17 @@
+{
+  "id": "second-skin",
+  "name": "First Live with Inkubus Sukkubus",
+  "slug": "second-skin",
+  "date": "2012-11-02",
+  "time": "22:00",
+  "published": true,
+  "image": {
+    "src": "/events/second-skin.png",
+    "alt": "First live performance flyer with Inkubus Sukkubus at Second Skin on November 2, 2012, in Athens."
+  },
+  "location": "Athens, Greece",
+  "eventLink": null,
+  "venueLink": "https://www.google.com/maps/place/Second+Skin/@37.9794644,23.7090857,16.68z/data=!4m5!3m4!1s0x14a1bcdee3842897:0xfcab98cdaffa76e8!8m2!3d37.9793579!4d23.7110852",
+  "artists": "Come with Reverse, Inkubus Sukkubus",
+  "venue": "Second Skin"
+}

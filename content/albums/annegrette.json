@@ -1,0 +1,44 @@
+{
+  "id": "annegrette",
+  "name": "Annegrette – Single",
+  "slug": "annegrette",
+  "releaseDate": "2016-05-24",
+  "published": true,
+  "image": {
+    "src": "/albums/annegrette.jpg",
+    "alt": "Come with Reverse - Annegrette – Single"
+  },
+  "video": null,
+  "notes": "<p>by come with reverse, Lisa Miles</p>",
+  "songs": [
+    {
+      "name": "Annegrette",
+      "links": [
+        {
+          "source": "youtube",
+          "link": "https://www.youtube.com/watch?v=s5_SjTZoeII"
+        },
+        {
+          "source": "lyrics",
+          "link": "https://genius.com/Come-with-reverse-annegrette-lyrics"
+        },
+        {
+          "source": "bandcamp",
+          "link": "https://comewithreverse.bandcamp.com/track/annegrette"
+        },
+        {
+          "source": "spotify",
+          "link": "https://open.spotify.com/album/3NFu5BqpefD3KJyePdRMn1"
+        },
+        {
+          "source": "apple",
+          "link": "https://music.apple.com/us/album/annegrette-feat-lisa-miles-single/1558830959"
+        }
+      ],
+      "audio": {
+        "src": "https://firebasestorage.googleapis.com/v0/b/comewithreverse-893b1.appspot.com/o/albums%2Fannegrette%2Fsongs.0.audio.mp3?alt=media&token=021ef7e0-42a0-46d1-b2d9-709d8b879fe3",
+        "title": "Annegrette.sample.mp3"
+      }
+    }
+  ]
+}

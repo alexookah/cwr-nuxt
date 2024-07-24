@@ -4,6 +4,26 @@ export default defineNuxtConfig({
   extends: ['./woonuxt_base'],
 
   components: [{ path: './components', pathPrefix: false }],
+  modules: ['@nuxt/content', '@nuxtjs/sitemap'],
+
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', href: '/favicon.png', type: 'image/png' },
+      ],
+    },
+  },
+  site: {
+    url: 'https://comewithreverse.com',
+  },
+  sitemap: {
+    exclude: [
+      '/my-account',
+      '/order-summary',
+      '/checkout',
+      '/categories',
+    ],
+  },
 
   /**
    * Depending on your servers capabilities, you may need to adjust the following settings.
