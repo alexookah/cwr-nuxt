@@ -13,7 +13,7 @@ const advancedSizeChart = computed(() => {
 onMounted(async () => {
   if (!advancedSizeChart) return;
 
-  if (process.client) {
+  if (!import.meta.env.SSR) {
     const script = document.createElement('script');
     script.src = '/scripts/product-size-guide.js';
     script.async = true;
