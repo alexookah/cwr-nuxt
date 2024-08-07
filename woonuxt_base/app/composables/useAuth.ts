@@ -5,18 +5,26 @@ export const useAuth = () => {
   const { refreshCart } = useCart();
   const { logGQLError } = useHelpers();
 
-  const customer = useState<Customer>('customer', () => ({ billing: {}, shipping: {} }));
+  const customer = useState<Customer>('customer', () => {
+
+    if (!import.meta.env.SSR) {
+      const savedCustomer = localStorage.getItem('WooNuxtCustomer');
+      if (savedCustomer) {
+        try {
+          return JSON.parse(savedCustomer) as Customer;
+        } catch (e) {
+          localStorage.removeItem('WooNuxtCustomer');
+          console.error('Failed to parse saved customer:', e);
+        }
+      }
+    }
+    return { billing: {}, shipping: {} };
+  });
+
   const viewer = useState<Viewer | null>('viewer', () => null);
   const isPending = useState<boolean>('isPending', () => false);
   const orders = useState<Order[] | null>('orders', () => null);
   const downloads = useState<DownloadableItem[] | null>('downloads', () => null);
-
-  onMounted(() => {
-    const savedCustomer = localStorage.getItem('WooNuxtCustomer');
-    if (savedCustomer) {
-      customer.value = JSON.parse(savedCustomer);
-    }
-  });
 
   // Log in the user
   const loginUser = async (credentials: CreateAccountInput): Promise<{ success: boolean; error: any }> => {

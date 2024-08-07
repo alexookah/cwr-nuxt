@@ -8,19 +8,26 @@ export function useCheckout() {
   const { storeSettings } = useAppConfig();
   const errorMessage = useState<string | null>('errorMessage', () => null);
   const orderInput = useState<any>('orderInput', () => {
+
+    if (!import.meta.env.SSR) {
+      try {
+        // Try to load saved order input from localStorage
+        const savedOrderInput = localStorage.getItem('WooNuxtOrderInput');
+        if (savedOrderInput) {
+          return JSON.parse(savedOrderInput);
+        }
+      } catch (error) {
+        localStorage.removeItem('WooNuxtOrderInput');
+        console.error('Failed to load order input from localStorage:', error);
+      }
+    }
+
     return {
       customerNote: '',
       paymentMethod: '',
       shipToDifferentAddress: false,
       metaData: [{ key: 'order_via', value: 'WooNuxt' }],
     };
-  });
-
-  onMounted(() => {
-    const savedOrderInput = localStorage.getItem('WooNuxtOrderInput');
-    if (savedOrderInput) {
-      orderInput.value = JSON.parse(savedOrderInput);
-    }
   });
 
   const isProcessingOrder = useState<boolean>('isProcessingOrder', () => false);
@@ -175,9 +182,9 @@ export function useCheckout() {
     if (error) {
       throw new CheckoutInlineError(error.message);
     }
-    
+
     const { source } = await stripe.createSource(cardElement as CreateSourceData);
-    
+
     if (source) orderInput.value.metaData.push({ key: '_stripe_source_id', value: source.id });
     if (setupIntent) orderInput.value.metaData.push({ key: '_stripe_intent_id', value: setupIntent.id });
 
@@ -251,7 +258,7 @@ export function useCheckout() {
 
       useRouter().push({ query: {} });
       manageCheckoutLocalStorage(false);
-      
+
       if (error instanceof CheckoutInlineError) {
         errorMessage.value = error.message;
       } else {
