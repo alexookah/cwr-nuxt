@@ -11,6 +11,7 @@ type ProductCategory = import('#gql').ProductCategoryFragment;
 type Product = ProductBase & SimpleProduct & VariableProduct;
 type Address = import('#gql').AddressFragment;
 type Terms = import('#gql').TermsFragment;
+type LoginClients = import('#gql').GetLoginClientsQuery['loginClients'];
 
 interface ProductAttributeInput {
   attributeName: string;
