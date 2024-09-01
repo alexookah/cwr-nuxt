@@ -63,3 +63,7 @@
 .color-button.color-green-camo { background-color: #9e7853; }
 .color-button.color-khaki { background-color: #b49771; }
 .color-button.color-stone { background-color: #d6bdad; }
+
+.custom-shadow {
+    @apply shadow-[0_2px_7px_4px_rgba(0,0,0,0.1)];
+}
