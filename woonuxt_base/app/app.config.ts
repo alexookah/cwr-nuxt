@@ -22,5 +22,6 @@ export default defineAppConfig({
     hideBillingAddressForVirtualProducts: true,
     initStoreOnUserActionToReduceServerLoad: false,
     saleBadge: 'percent', // 'percent', 'onSale' or 'hidden'
+    socialLoginsDisplay: 'buttons', // 'buttons' or 'icons'
   },
 });
