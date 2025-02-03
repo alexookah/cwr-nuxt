@@ -21,6 +21,7 @@ export default defineAppConfig({
     showMoveToWishlist: false,
     hideBillingAddressForVirtualProducts: true,
     initStoreOnUserActionToReduceServerLoad: false,
+    stripePaymentMethod: 'card', // 'card' || 'payment' -> ( 'card': shows CardElement, 'payment': shows payment tabs from stripe )
     saleBadge: 'percent', // 'percent', 'onSale' or 'hidden'
     socialLoginsDisplay: 'buttons', // 'buttons' or 'icons'
   },
