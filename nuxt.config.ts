@@ -1,10 +1,9 @@
 export default defineNuxtConfig({
-
   // Get all the pages, components, composables and plugins from the parent theme
   extends: ['./woonuxt_base'],
 
   components: [{ path: './components', pathPrefix: false }],
-  modules: ['@nuxt/content', '@nuxtjs/sitemap'],
+  modules: ['@nuxtjs/sitemap', '@nuxt/content'],
 
   app: {
     head: {
@@ -13,9 +12,11 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   site: {
     url: 'https://comewithreverse.com',
   },
+
   sitemap: {
     exclude: [
       '/my-account',
@@ -40,4 +41,6 @@ export default defineNuxtConfig({
       failOnError: false,
     },
   },
+
+  compatibilityDate: '2025-02-08',
 });
