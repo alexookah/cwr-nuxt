@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 const route = useRoute();
 const slug = route.params.event as string;
-const event = await queryContent('events').where({ slug }).findOne();
+const event = await queryCollection('events').where('slug', '=', slug).first();
 
 const { $openLightbox } = useNuxtApp();
 const openImageInLightbox = (src: string) => {
