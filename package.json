@@ -11,7 +11,7 @@
     "serve": "nuxi generate && npx serve .output/public -l 8080"
   },
   "dependencies": {
-    "@nuxt/content": "^3.0.1",
+    "@nuxt/content": "^3.1.1",
     "@nuxtjs/sitemap": "^7.2.4",
     "glightbox": "^3.2.0",
     "swiper": "^11.1.8",
