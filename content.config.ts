@@ -47,7 +47,7 @@ export default defineContentConfig({
         venueLink: z.string(),
         eventLink: z.string(),
         artists: z.string().optional(),
-        body: z.string().optional(),
+        body: z.string().optional().default(""),
         image: z.object({
           src: z.string(),
           alt: z.string()
