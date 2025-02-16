@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const events = await queryContent('events').sort({ date: -1 }).find();
+const events = await queryCollection('events').order('date', 'DESC').all();
 </script>
 
 <template>

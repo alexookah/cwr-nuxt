@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 const route = useRoute();
 const slug = route.params.album as string;
-const album = await queryContent('albums').where({ slug }).findOne();
+const album = await queryCollection('albums').where('slug', '=', slug).first();
 
 function getLinkIconDetails(source: string) {
   const linkIcons: Record<string, { name: string; altText: string }> = {

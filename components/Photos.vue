@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const result = await queryContent('photos').findOne();
+import { useNuxtApp } from 'nuxt/app';
+
+const result = await queryCollection('photos').first();
 const photos = result.images;
 
 const { $openLightbox } = useNuxtApp();

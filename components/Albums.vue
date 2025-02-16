@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const albums = await queryContent('albums').sort({ releaseDate: -1 }).find();
+const albums = await queryCollection('albums').order('releaseDate', 'DESC').all();
 
 </script>
 <template>

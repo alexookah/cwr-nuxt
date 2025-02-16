@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 const route = useRoute();
 const slug = route.params.event as string;
-const event = await queryContent('events').where({ slug }).findOne();
+const event = await queryCollection('events').where('slug', '=', slug).first();
 
 const { $openLightbox } = useNuxtApp();
 const openImageInLightbox = (src: string) => {
@@ -26,6 +26,8 @@ useSeoMeta({
   ogImage: `https://comewithreverse.com/${event.image.src}`,
   twitterCard: 'summary_large_image',
 });
+
+console.log(JSON.stringify(event.body, null, 2));
 </script>
 
 
@@ -63,7 +65,7 @@ useSeoMeta({
       </p>
     </div>
 
-    <div v-if="event.body">
+    <div v-if="event.body && event.body.trim()">
       <h2 class="text-xl font-semibold mb-2">Event Info</h2>
       <div class="event-body mb-6 prose max-w-none" v-html="event.body"></div>
     </div>
