@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+
+import { enhanceSizeGuideData } from '../../utils/enhanceSizeGuideData'
+
 interface Props {
   product: Product;
 }
@@ -11,7 +14,7 @@ const advancedSizeChart = computed(() => {
 });
 
 onMounted(async () => {
-  if (!advancedSizeChart) return;
+  if (!advancedSizeChart.value) return;
 
   if (!import.meta.env.SSR) {
     const script = document.createElement('script');
@@ -21,10 +24,17 @@ onMounted(async () => {
     document.head.appendChild(script);
   }
 
-  const newValue = await enhanceSizeGuideData(advancedSizeChart.value);
-  window.pfGlobal = {};
-  window.pfGlobal.sg_data_raw = newValue || advancedSizeChart.value;
-  window.pfGlobal.sg_primary_unit = 'centimeter';
+  setTimeout(async () => {
+    try {
+      const sizeGuideData = JSON.parse(advancedSizeChart.value || '');
+      const newValue = await enhanceSizeGuideData(advancedSizeChart.value);
+      window.pfGlobal = {};
+      window.pfGlobal.sg_data_raw = newValue || advancedSizeChart.value;
+      window.pfGlobal.sg_primary_unit = 'centimeter';
+    } catch (err) {
+      console.error('Error initializing size guide:', err);
+    }
+  }, 100);
 });
 
 const openModal = () => {
