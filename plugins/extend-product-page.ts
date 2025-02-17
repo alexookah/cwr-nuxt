@@ -32,7 +32,7 @@ export default defineNuxtPlugin((nuxtApp) => {
 
         // Render the component into wrapper
         render(sizeGuide, wrapper)
-      }, 0)
+      }, 50)
     },
   })
 })
