@@ -26,7 +26,6 @@ onMounted(async () => {
 
   setTimeout(async () => {
     try {
-      const sizeGuideData = JSON.parse(advancedSizeChart.value || '');
       const newValue = await enhanceSizeGuideData(advancedSizeChart.value);
       window.pfGlobal = {};
       window.pfGlobal.sg_data_raw = newValue || advancedSizeChart.value;
