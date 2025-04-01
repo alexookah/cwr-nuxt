@@ -20,9 +20,13 @@ export function useCheckout() {
     isUpdatingCart.value = true;
 
     try {
+      if (!viewer?.value?.id) {
+        throw new Error('Viewer ID is missing.');
+      }
+
       const { updateCustomer } = await GqlUpdateCustomer({
         input: {
-          id: viewer?.value?.id,
+          id: viewer.value.id,
           shipping: orderInput.value.shipToDifferentAddress ? customer.value.shipping : customer.value.billing,
           billing: customer.value.billing,
         } as UpdateCustomerInput,
@@ -30,7 +34,9 @@ export function useCheckout() {
 
       if (updateCustomer) refreshCart();
     } catch (error) {
-      console.error(error);
+      console.error('Error updating shipping location:', error);
+    } finally {
+      isUpdatingCart.value = false;
     }
   }
 
@@ -42,7 +48,7 @@ export function useCheckout() {
       const top = window.innerHeight / 2 - height / 2 + 80;
       const payPalWindow = window.open(redirectUrl, '', `width=${width},height=${height},top=${top},left=${left}`);
       const timer = setInterval(() => {
-        if (payPalWindow?.closed) {
+        if (payPalWindow && payPalWindow.closed) {
           clearInterval(timer);
           resolve(true);
         }
@@ -50,7 +56,7 @@ export function useCheckout() {
     });
   }
 
-  const proccessCheckout = async (isPaid = false) => {
+  const processCheckout = async (isPaid = false) => {
     const { customer, loginUser } = useAuth();
     const router = useRouter();
     const { replaceQueryParam } = useHelpers();
@@ -124,8 +130,6 @@ export function useCheckout() {
         await refreshCart();
       }
     } catch (error: any) {
-      isProcessingOrder.value = false;
-
       const errorMessage = error?.gqlErrors?.[0].message;
 
       if (errorMessage?.includes('An account is already registered with your email address')) {
@@ -143,7 +147,7 @@ export function useCheckout() {
   return {
     orderInput,
     isProcessingOrder,
-    proccessCheckout,
+    processCheckout,
     updateShippingLocation,
   };
 }
