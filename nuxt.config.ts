@@ -40,6 +40,7 @@ export default defineNuxtConfig({
       interval: 1000,
       failOnError: false,
     },
+    minify: true
   },
 
   compatibilityDate: '2025-02-08',
